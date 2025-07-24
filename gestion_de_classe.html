@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gestion de classe</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #00ff9966, 0 0 120px 60px #00ff9933 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff9988;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #00ff99;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #00ff99;
+      border: 2px solid #00ff99;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #00ff99;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #00ff9944;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ff9922;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ff99;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #00ff99;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Gestion de classe</h1>
+<p>Favoriser un climat positif et des stratégies d’organisation en classe</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+
+<section id="dinamicas"><div class="card-container">
+
+  <div class="card" style="...">
+    <i class="fas fa-users-cog" style="..."></i>
+    <div>
+      <h3>Roue des règles</h3>
+      <p>Le groupe crée une roue en carton avec des règles de vie. Chaque jour, on la tourne pour en mettre une en valeur en classe.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-clock" style="..."></i>
+    <div>
+      <h3>Feu de signalisation du temps</h3>
+      <p>On utilise un feu visuel (vert, orange, rouge) pour réguler le temps d’activités, aidant les élèves à s’autoréguler.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-handshake" style="..."></i>
+    <div>
+      <h3>Responsable du jour</h3>
+      <p>Chaque jour, un élève a un rôle (distribuer le matériel, noter les devoirs…). Encourage la responsabilité et l’ordre.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-comments" style="..."></i>
+    <div>
+      <h3>Minute de silence consciente</h3>
+      <p>Après la récréation, une minute de silence guidée aide à revenir au calme et à la concentration.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-smile" style="..."></i>
+    <div>
+      <h3>Émotiomètre quotidien</h3>
+      <p>Chaque élève place son nom ou une épingle sur une émotion en début de journée. Permet de gérer le climat émotionnel.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-bullseye" style="..."></i>
+    <div>
+      <h3>Objectif de la semaine</h3>
+      <p>On choisit un objectif commun (ordre, silence, ponctualité). S’il est atteint, une récompense symbolique est donnée.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-microphone-alt" style="..."></i>
+    <div>
+      <h3>Porte-parole du groupe</h3>
+      <p>En activité de groupe, un élève transmet les idées. Encourage le respect des tours de parole et une communication claire.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-binoculars" style="..."></i>
+    <div>
+      <h3>Observateur invisible</h3>
+      <p>Un élève observe sans intervenir puis partage ce qu’il a vu sur la dynamique de groupe. Favorise la réflexion collective.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-thumbs-up" style="..."></i>
+    <div>
+      <h3>Coin des réussites</h3>
+      <p>Un espace en classe pour noter les réussites liées au vivre-ensemble. Renforce le positif et l’estime collective.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-random" style="..."></i>
+    <div>
+      <h3>Changer de rôle</h3>
+      <p>Les élèves échangent leurs responsabilités (matériel, temps, ordre). Tous découvrent les rôles de la classe.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-book-reader" style="..."></i>
+    <div>
+      <h3>Lecture silencieuse avec signaux</h3>
+      <p>Pendant la lecture, les élèves lèvent un signal pour demander de l’aide sans parler. Favorise l’autonomie et le respect.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-star" style="..."></i>
+    <div>
+      <h3>Élève étoile</h3>
+      <p>Chaque semaine, un élève est choisi pour son attitude. Il reçoit une reconnaissance symbolique.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-route" style="..."></i>
+    <div>
+      <h3>Parcours d’entrée et de sortie</h3>
+      <p>Des parcours sont tracés en classe pour les entrées/sorties. Favorise l’ordre et la sécurité.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-chart-line" style="..."></i>
+    <div>
+      <h3>Graphique du bruit</h3>
+      <p>Avec une application ou un outil manuel, on mesure le niveau sonore. Le groupe en discute ensuite.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-user-check" style="..."></i>
+    <div>
+      <h3>Liste de rôles tournants</h3>
+      <p>Chaque semaine, les rôles changent et sont affichés dans la classe.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-chalkboard-teacher" style="..."></i>
+    <div>
+      <h3>Minute de réflexion finale</h3>
+      <p>Avant de sortir, les élèves expriment ce qu’ils ont appris ou ressenti à l’oral ou par écrit.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-grin-stars" style="..."></i>
+    <div>
+      <h3>Cercle de reconnaissance</h3>
+      <p>En fin de semaine, le groupe valorise les comportements positifs observés chez leurs camarades.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-magic" style="..."></i>
+    <div>
+      <h3>Mot magique du jour</h3>
+      <p>On choisit un mot ou une attitude (ex. patience) à retenir et valoriser tout au long de la journée.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-eye" style="..."></i>
+    <div>
+      <h3>Regard en arrière</h3>
+      <p>Chaque vendredi, on revoit les objectifs de comportement, on célèbre les réussites et on identifie les points à améliorer.</p>
+    </div>
+  </div>
+
+  <div class="card" style="...">
+    <i class="fas fa-users" style="..."></i>
+    <div>
+      <h3>Roue de résolution de conflits</h3>
+      <p>Un protocole visuel est utilisé pour résoudre les conflits à deux ou en groupe. Encourage l’autonomie émotionnelle.</p>
+    </div>
+  </div>
+
+</div></section>
+<section id="videos"><div class="card-container">
+
+  <div class="card">
+    <h3><i class="fas fa-film"></i> Les règles du jeu – Merlin Flügel</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/A1cEcdixWfg" title="Rules of Play" frameborder="0" allowfullscreen></iframe>
+    <p>Des enfants jouent sans règles et tout devient chaotique jusqu’à ce qu’ils établissent des règles qui organisent le jeu. Parfait pour réfléchir à l’importance des règles.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film"></i> Ben & Jerry – Amitié et conflit</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/5BDVH8Ms5h0" title="Ben & Jerry CGI Animation" frameborder="0" allowfullscreen></iframe>
+    <p>Une amitié mise à l’épreuve par l’orgueil et les malentendus. Idéal pour aborder la résolution de conflits et le dialogue.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film"></i> Balablok – Discrimination et conflit</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/4tj42ETz88w?si=_PWCyIC7Z-QvLYlN" title="Balablok" frameborder="0" allowfullscreen></iframe>
+    <p>Des formes géométriques entrent en conflit à cause de leurs différences. Une métaphore visuelle sur l’intolérance et le manque de communication.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film"></i> Expérience de Robbers Cave – Coopération vs. conflit</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/W9DyGsuvIPo" title="Robbers Cave Experiment" frameborder="0" allowfullscreen></iframe>
+    <p>Des enfants divisés en groupes rivaux doivent ensuite coopérer. Une expérience sociale puissante sur l’identité de groupe et l’unité.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film"></i> Un petit désaccord</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/9x7FGbW3IVc" title="A Brief Disagreement" frameborder="0" allowfullscreen></iframe>
+    <p>Un malentendu mineur dégénère entre deux amis. Idéal pour parler de l’importance de dialoguer dans les moments de tension.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film"></i> Suivre les règles, ce n’est pas facile</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/ZFM63Hrviro" title="Struggling to Follow the Rules" frameborder="0" allowfullscreen></iframe>
+    <p>Un groupe d’enfants dans une expérience réelle : d’abord sans règles, puis avec. Illustre clairement l’utilité des limites positives.</p>
+  </div>
+
+</div></section>
+<section id="tic"><div class="card-container">
+
+  <div class="card">
+    <h3><i class="fas fa-user-check"></i> <a href="https://classroom.google.com/" target="_blank">Google Classroom</a></h3>
+    <p>Plateforme pour organiser les devoirs, partager des ressources et communiquer avec les élèves. Favorise la planification et l’autonomie.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-bullhorn"></i> <a href="https://www.classdojo.com/" target="_blank">ClassDojo</a></h3>
+    <p>Renforce les comportements positifs, encourage le respect et améliore la communication avec les familles. Utile pour créer un climat scolaire positif.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-calendar-alt"></i> <a href="https://calendar.google.com" target="_blank">Google Agenda</a></h3>
+    <p>Permet de planifier des activités, organiser les rôles et coordonner les événements scolaires entre enseignants et élèves.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-chalkboard"></i> <a href="https://nearpod.com/" target="_blank">Nearpod</a></h3>
+    <p>Présentations interactives incluant des quiz, discussions et jeux. Encourage la participation active et le contrôle du rythme en classe.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-random"></i> <a href="https://wheelofnames.com/" target="_blank">Wheel of Names</a></h3>
+    <p>Roue numérique pour choisir un élève au hasard, répartir les groupes ou les tâches. Favorise l’équité et la participation.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-comment-dots"></i> <a href="https://www.mentimeter.com/" target="_blank">Mentimeter</a></h3>
+    <p>Outil pour réaliser des sondages et poser des questions en direct. Pratique pour connaître les opinions, les émotions ou évaluer la compréhension du groupe.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-mobile-alt"></i> <a href="https://www.remind.com/" target="_blank">Remind</a></h3>
+    <p>Application de messagerie sécurisée pour envoyer des rappels, des devoirs ou des félicitations. Améliore la communication entre enseignants, élèves et familles.</p>
+  </div>
+
+</div></section>
+<section id="lecturas"><div class="card-container">
+
+  <div class="card">
+    <img src="img/cuerdas.jpg" alt="Cuerdas" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Cordes</h3>
+    <p><strong>Auteur :</strong> Pedro Solís<br>
+    <strong>Âge :</strong> 8-12 ans<br>
+    <strong>ISBN :</strong> 9788426390950</p>
+    <p>Inspiré du court-métrage primé aux Goya, ce livre raconte l'amitié entre une fille et un camarade atteint de paralysie cérébrale. Tendre et empathique.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/yovoyconmigo.jpg" alt="Yo voy conmigo" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Je vais avec moi-même</h3>
+    <p><strong>Auteur :</strong> Raquel Díaz Reguera<br>
+    <strong>Âge :</strong> 6-10 ans<br>
+    <strong>ISBN :</strong> 9788494411342</p>
+    <p>Une histoire sur l'importance d'être soi-même et d'accepter les autres. Parfait pour travailler l'empathie et le respect.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/elpunto.jpg" alt="El punto" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Le point</h3>
+    <p><strong>Auteur :</strong> Peter H. Reynolds<br>
+    <strong>Âge :</strong> 6-10 ans<br>
+    <strong>ISBN :</strong> 9788496388352</p>
+    <p>Ce livre encourage la confiance en soi et incite les enfants à valoriser et soutenir les efforts des autres. Favorise l’attitude empathique.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/porcuatroesquinitasdenada.jpg" alt="Por cuatro esquinitas de nada" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Pour quelques petits coins seulement</h3>
+    <p><strong>Auteur :</strong> Jérôme Ruillier<br>
+    <strong>Âge :</strong> 5-8 ans<br>
+    <strong>ISBN :</strong> 9788426137814</p>
+    <p>Un récit sur l'inclusion, les différences et l'empathie. Petit Carré ne rentre pas dans la porte ronde, mais ses amis trouvent une solution sans changer son essence.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/amigoseescribeconh.png" alt="Amigo se escribe con H" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Amis s'écrit avec H</h3>
+    <p><strong>Auteur :</strong> María Fernanda Heredia<br>
+    <strong>Âge :</strong> 9–12 ans</p>
+    <p>Antonia ne veut pas connaître H, le nouvel élève. À travers leur relation, elle découvre l'importance d'écouter l'autre et de reconnaître les sentiments. Un chemin vers l'empathie.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/unmonstruovieneaverme.jpg" alt="Un monstruo viene a verme" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Un monstre vient me voir</h3>
+    <p><strong>Auteur :</strong> Patrick Ness (d'après Siobhán Dowd)<br>
+    <strong>Âge :</strong> 10–14 ans<br>
+    <strong>ISBN :</strong> 9781406325022</p>
+    <p>Conor affronte le cancer de sa mère et le harcèlement scolaire. À travers un monstre intérieur, il apprend à comprendre ses émotions et à se connecter émotionnellement. Une histoire profonde sur l'empathie et la résilience.</p>
+  </div>
+
+</div></section>
+
+<footer>
+    EscolaDiversa - Competencia Clave: Gestion Aula
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

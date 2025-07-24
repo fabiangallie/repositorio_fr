@@ -1,0 +1,510 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Travail collaboratif et coopératif</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #00ff9966, 0 0 120px 60px #00ff9933 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff9988;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #00ff99;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #00ff99;
+      border: 2px solid #00ff99;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #00ff99;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #00ff9944;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ff9922;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ff99;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #00ff99;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Travail collaboratif et coopératif</h1>
+<p>Favoriser la coopération, le respect et la réussite partagée</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+
+<section id="dinamicas"><div class="card-container">
+  <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-people-arrows" style="font-size:2rem;"></i>
+      <div>
+        <h3>Construction de tours</h3>
+        <p>Des équipes de 4 doivent construire une tour avec des pailles, du ruban et du papier. On évalue la collaboration plus que le résultat. Renforce la coordination et les rôles.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-puzzle-piece" style="font-size:2rem;"></i>
+      <div>
+        <h3>Puzzle coopératif</h3>
+        <p>Chaque élève possède une pièce d'un grand puzzle et ne peut la placer qu'après avoir discuté de sa fonction dans le groupe.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-brain" style="font-size:2rem;"></i>
+      <div>
+        <h3>Réflexion en trio</h3>
+        <p>En groupes de 3, chacun propose une idée, puis ils unissent leurs idées pour créer une solution commune. Stimule l'écoute active et la négociation.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hands-helping" style="font-size:2rem;"></i>
+      <div>
+        <h3>Mains croisées</h3>
+        <p>Tâche écrite qui ne peut être réalisée que si les membres du groupe s'entraident (une main attachée). Renforce l'interdépendance positive.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-sync-alt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Rôles rotatifs</h3>
+        <p>Chaque groupe reçoit des rôles (coordinateur, secrétaire, porte-parole, animateur) qui sont changés à chaque session. Favorise l'empathie et l'engagement.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-microphone-alt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Porte-parole en chaîne</h3>
+        <p>Chaque groupe choisit un porte-parole qui recueille les idées et les transmet au reste. Les rôles sont tournés. Aide à synthétiser et respecter les idées.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-comments" style="font-size:2rem;"></i>
+      <div>
+        <h3>Dialogue à tour de rôle</h3>
+        <p>On ne peut parler qu'avec un objet en main. Encourage l'autorégulation, l'écoute et le respect des tours de parole.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-lightbulb" style="font-size:2rem;"></i>
+      <div>
+        <h3>Idées en chaîne</h3>
+        <p>Chaque élève propose une idée, et le suivant doit construire dessus. Utile pour écrire des histoires ou résoudre des défis.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-heart" style="font-size:2rem;"></i>
+      <div>
+        <h3>Cercle de soutien</h3>
+        <p>Chaque enfant exprime une difficulté. Ses camarades lui offrent des suggestions ou un soutien émotionnel. Renforce l'esprit de camaraderie.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-user-friends" style="font-size:2rem;"></i>
+      <div>
+        <h3>Mon équipe idéale</h3>
+        <p>Chaque élève rédige ce qu'il attend d'une équipe idéale. On compare et on construit des accords sur le travail coopératif.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-check" style="font-size:2rem;"></i>
+      <div>
+        <h3>Révision entre pairs</h3>
+        <p>Les groupes examinent et corrigent les tâches d'un autre groupe en suivant une grille d'évaluation commune. Favorise l'évaluation collaborative.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-star" style="font-size:2rem;"></i>
+      <div>
+        <h3>Chaîne de compliments</h3>
+        <p>Chaque enfant doit dire quelque chose de positif sur l'ami à sa droite. Améliore la cohésion et l'ambiance du groupe.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-map-marked" style="font-size:2rem;"></i>
+      <div>
+        <h3>Mission impossible</h3>
+        <p>Le groupe reçoit une mission symbolique (sauver la planète, traverser un fleuve). Ils doivent la résoudre par une collaboration stratégique.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-bolt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Défi éclair</h3>
+        <p>Les équipes rivalisent pour résoudre des défis rapides de logique ou d'expression orale. Ils ne gagnent que s'ils travaillent ensemble, pas par rapidité.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-user-cog" style="font-size:2rem;"></i>
+      <div>
+        <h3>Résolution de dilemmes</h3>
+        <p>Les groupes doivent résoudre un dilemme éthique ou un problème scolaire. La solution est présentée ensuite à la classe, mettant en avant les arguments et les accords.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-magic" style="font-size:2rem;"></i>
+      <div>
+        <h3>L'objet mystérieux</h3>
+        <p>Un objet symbolique est donné et les groupes inventent sa fonction et son utilité. Renforce la créativité collective et le consensus.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-chalkboard-teacher" style="font-size:2rem;"></i>
+      <div>
+        <h3>Ateliers rotatifs</h3>
+        <p>Les groupes tournent par stations d'activités et doivent laisser des indices au groupe suivant. Stimule la responsabilité partagée.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-cubes" style="font-size:2rem;"></i>
+      <div>
+        <h3>Le défi des formes</h3>
+        <p>Ils doivent construire une figure avec des matériaux simples selon des instructions orales, sans voir le modèle. Nécessite précision et écoute.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-shield-alt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Écusson coopératif</h3>
+        <p>Chaque groupe crée un écusson représentant ses forces en tant qu'équipe. Il est présenté et accroché en classe.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-pen-fancy" style="font-size:2rem;"></i>
+      <div>
+        <h3>Récit collectif</h3>
+        <p>Ils écrivent une histoire à tour de rôle. Chaque élève apporte une partie. Stimule la cohésion narrative et le respect des idées.</p>
+      </div>
+    </div>
+</div></section>
+<section id="videos"><div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Travail d'équipe et leadership – Creative 360</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/WbCxRMBFRFA" title="Teamwork and Leadership | Animated short clip" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage inspirant où des personnages apprennent que, en collaborant et en dirigeant ensemble, ils réalisent des objectifs qu'ils ne pourraient pas atteindre seuls.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Pour les oiseaux – Pixar</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/HJg10H39FhE" title="For the Birds" frameborder="0" allowfullscreen></iframe>
+      <p>Une métaphore amusante où plusieurs oiseaux apprennent que le groupe fonctionne mieux lorsque tout le monde est inclus et respecté.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Le pouvoir du travail d'équipe – Animation drôle</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/4duPBWzf46E" title="The Power Of Teamwork" frameborder="0" allowfullscreen></iframe>
+      <p>Un groupe découvre que, ensemble, ils peuvent surmonter des défis qui seraient impossibles individuellement. Drôle et direct.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Travail d'équipe – The Fixies</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/LC3Ri4uTPe8" title="Teamwork | The Fixies" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage animé où les personnages doivent coopérer pour résoudre un problème technique. Un bon exemple pour l'école primaire.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Travailler ensemble en équipe – WonderGrove</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/TZqFYtWCWXg" title="Work Together as a Team S4 E5" frameborder="0" allowfullscreen></iframe>
+      <p>Un épisode éducatif avec des conseils pratiques sur la façon de coopérer, idéal pour motiver les dynamiques de groupe.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Le pouvoir du travail d'équipe expliqué</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/SOlYTTFwBcM" title="The Power of Teamwork Explained" frameborder="0" allowfullscreen></iframe>
+      <p>Explication visuelle et simple de pourquoi et comment un groupe fonctionne mieux lorsqu'il travaille uni.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Odo la série – Le triomphe du travail d'équipe</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/0egx2gu5w0M" title="Odo the Series – Teamwork Triumphs" frameborder="0" allowfullscreen></iframe>
+      <p>Animation colorée où Odo et ses amis combinent leurs compétences pour accomplir quelque chose que chacun ne pourrait faire seul.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Pixar – Smash and Grab</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/A4-G7YpSFb4?si=dhCJ4iXMW1wYUfGL" title="Smash and Grab" frameborder="0" allowfullscreen></iframe>
+      <p>Des robots ouvriers sur Mars s'unissent pour échapper au système, mettant en valeur la solidarité, l'amitié et le travail en commun. </p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Madagascar – “Le travail d’équipe marche !”</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/grpLUX8D86g" title="Madagascar Team work works!" frameborder="0" allowfullscreen></iframe>
+      <p>Scène du film “Madagascar” où les personnages apprennent qu'ils ne peuvent réussir que s'ils sont unis. Humour et coopération.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> Les 5 C du travail en équipe</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/cJUXxjOeoCk?si=sc6vs-XI4wjfr67S" title="Las 5 C del trabajo en equipo" frameborder="0" allowfullscreen></iframe>
+      <p>Complémentarité, coordination, communication, confiance, engagement.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> L'école du rock – Attribution des rôles</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/DB1rdAT27ug" title="School of Rock Assigning Roles" frameborder="0" allowfullscreen></iframe>
+      <p>Jack Black distribue les rôles dans le groupe scolaire : un excellent exemple de leadership partagé, d'écoute active et de mise à profit des forces individuelles.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> L'école du rock – “Le rock n'a pas de raison”</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/f6jW6Ks1B-c" title="School of Rock Rock Got No Reason" frameborder="0" allowfullscreen></iframe>
+      <p>Moment clé pendant la répétition : montre comment le groupe, uni et coordonné, surmonte des difficultés. Renforce l'unité du groupe et la persévérance collective.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> L'école du rock – “Briser les règles”</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/E32dv42yDIg" title="School of Rock You Gotta break the rules" frameborder="0" allowfullscreen></iframe>
+      <p>Jack Black défie les règles établies et motive sa classe à agir en équipe avec passion. Un excellent exemple d'autonomisation collective.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film"></i> The Big Green – Bande-annonce</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/uBOsdyx6V6M" title="The Big Green trailer" frameborder="0" allowfullscreen></iframe>
+      <p>Des enfants peu habiles forment une équipe de football. L'histoire montre comment l'effort collectif surmonte la peur et la faible estime de soi.</p>
+    </div>
+
+</div></section>
+<section id="tic"><div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-file-alt"></i> <a href="https://docs.google.com" target="_blank">Google Docs / Slides</a></h3>
+      <p>Permet de modifier des documents et des présentations en temps réel. Idéal pour écrire des histoires collectives, créer des exposés ou résoudre des exercices en groupe.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> <a href="https://jamboard.google.com" target="_blank">Jamboard</a></h3>
+      <p>Tableau collaboratif en ligne pour des séances de brainstorming, des schémas et des cartes mentales partagées. Intuitif et utile pour les travaux en petits groupes.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-network-wired"></i> <a href="https://miro.com" target="_blank">Miro</a></h3>
+      <p>Espaces visuels de travail collaboratif : permet de créer des tableaux avec des post-its, des dessins, des schémas et des flux. Idéal pour les projets communs.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-puzzle-piece"></i> <a href="https://edpuzzle.com" target="_blank">Edpuzzle</a></h3>
+      <p>Permet d’insérer des questions et des commentaires dans des vidéos. Utile pour les groupes afin de réfléchir et débattre de contenus de manière collaborative.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-cubes"></i> <a href="https://www.genially.com/" target="_blank">Genially</a></h3>
+      <p>Outil pour créer des contenus interactifs en groupe : infographies, jeux, présentations. Encourage la créativité partagée et le design collaboratif.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-th"></i> <a href="https://padlet.com" target="_blank">Padlet</a></h3>
+      <p>Mur numérique où tous les élèves peuvent écrire, télécharger des images ou partager des ressources sur un même sujet. Idéal pour des exposés collectifs.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lock"></i> <a href="https://www.breakoutedu.com" target="_blank">Breakout EDU</a></h3>
+      <p>Salles d’évasion éducatives déjà conçues par des enseignants. Défis basés sur des contenus scolaires et la collaboration en équipe.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-magic"></i> <a href="https://genially.com/es/plantillas/juegos/escape-room/" target="_blank">Genially – Modèles Escape Room</a></h3>
+      <p>Plus de 20 modèles gratuits et entièrement personnalisables : énigmes, animations et codes qui renforcent le travail en groupe et la prise de décision collective.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-cube"></i> <a href="https://playpuzzlepunks.com" target="_blank">Puzzle Punks</a></h3>
+      <p>Salles d’évasion numériques sur les mathématiques et la langue pour le primaire : jeux par niveaux, courts et conçus pour la compétition en équipe.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-rocket"></i> <a href="https://sites.google.com/view/2019-escaperoomdigital/p%C3%A1gina-principal" target="_blank">Escape Room Digital 2019</a></h3>
+      <p>Jeu en ligne avec 5 défis interdisciplinaires pour le CM2 et la 6ᵉ : favorise la coopération, la logique et la responsabilité partagée.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-brain"></i> <a href="https://sites.google.com/view/karlymourapdresources/digital-escape-rooms/free-digital-escape-rooms" target="_blank">Karly’s Free Escape Rooms</a></h3>
+      <p>Salles d’évasion gratuites imprimables et numériques prêtes à jouer : thématiques et parfaites pour de petits groupes coopératifs.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-atom"></i> <a href="https://www.cc-pl.org/at-home/digital-escape-rooms" target="_blank">Campbell County Digital Escapes</a></h3>
+      <p>Série de jeux thématiques (8-14 ans) : dinosaures, safari, expéditions polaires… chacun conçu pour stimuler la pensée critique et la gestion de groupe.</p>
+    </div>
+
+</div></section>
+<section id="lecturas">
+  <div class="card-container">
+
+    <div class="card">
+      <img src="img/ideas_casa_arbol1.jpg" alt="Toutes pour une (Idées dans la cabane dans l’arbre 1)" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Toutes pour une</h3>
+      <p><strong>Série :</strong> Idées dans la cabane dans l’arbre vol. 1<br>
+         <strong>Auteur :</strong> W. Ama<br>
+         <strong>Âge :</strong> 9-12 ans</p>
+      <p>Un groupe d’enfants se réunit dans leur cabane pour imaginer des solutions créatives et se soutenir mutuellement dans leurs aventures. Favorise la collaboration, la confiance et l’imagination partagée.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/futbolisimos1.jpg" alt="Les Footmalins – Le mystère des arbitres endormis" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Les Footmalins</h3>
+      <p><strong>Auteur :</strong> Roberto Santiago<br>
+         <strong>Âge :</strong> 10-12 ans</p>
+      <p>L’équipe de foot Soto Alto doit résoudre des mystères pendant les matchs. Avec amitié, confiance et stratégie collective, ils prouvent que l’union fait la force.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/equipo_tigre.jpg" alt="L’équipe Tigre" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>L’équipe Tigre</h3>
+      <p><strong>Auteur :</strong> Thomas Brezina<br>
+         <strong>Âge :</strong> 9-12 ans</p>
+      <p>Patrick, Biggi, Luc et leur chien forment une équipe de jeunes détectives. Chacun apporte ses compétences pour résoudre des énigmes. Coopération et amitié en action.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/los_cinco.jpg" alt="Le Club des Cinq – The Famous Five" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Le Club des Cinq</h3>
+      <p><strong>Auteur :</strong> Enid Blyton<br>
+         <strong>Âge :</strong> 9-12 ans</p>
+      <p>Julien, Dick, Claude, Annie et leur chien Tim vivent de grandes aventures ensemble. Ce classique célèbre l’esprit d’équipe, la loyauté et la confiance mutuelle.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/ideas_casa_arbol2.jpg" alt="Le meilleur de chacun (Idées dans la cabane dans l’arbre 2)" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Le meilleur de chacun</h3>
+      <p><strong>Série :</strong> Idées dans la cabane dans l’arbre vol. 2<br>
+         <strong>Auteur :</strong> W. Ama<br>
+         <strong>Âge :</strong> 9-12 ans</p>
+      <p>Le groupe d’amis se retrouve pour concevoir et mettre en œuvre ensemble de nouveaux projets créatifs. Montre comment le travail d’équipe enrichit les idées individuelles.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/los_seis_amigos.jpg" alt="Les Six Amis" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Les Six Amis</h3>
+      <p><strong>Auteur :</strong> Paul‑Jacques Bonzon<br>
+         <strong>Âge :</strong> 9-12 ans</p>
+      <p>Cette série classique raconte les aventures de six enfants solidaires qui résolvent des mystères ensemble. Met en valeur la coopération et l'importance de chaque rôle dans un groupe.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+    EscolaDiversa - Competencia Clave: Trabajo Colaborativo
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

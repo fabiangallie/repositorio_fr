@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Respect et tolérance</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #ff33cc66, 0 0 120px 60px #ff33cc33 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff33cc;
+      text-shadow: 0 0 10px #ff33cc88;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #ff33cc;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #ff33cc;
+      border: 2px solid #ff33cc;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #ff33cc;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #ff33cc44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #ff33cc22;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #ff33cc;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #ff33cc;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Respect et tolérance</h1>
+<p>Promouvoir l’acceptation des différences et la coexistence pacifique</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+
+<section id="dinamicas">
+  <div class="card-container">
+
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hands-helping" style="font-size:2rem;"></i>
+      <div>
+        <h3>Chaîne de Respect</h3>
+        <p>Chaque élève écrit une action respectueuse qu'il a reçue d'un autre camarade au cours de la semaine. On forme des maillons avec des cartons et on les accroche pour former une chaîne dans la classe. Cela renforce l'empathie et la reconnaissance positive.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-eye" style="font-size:2rem;"></i>
+      <div>
+        <h3>Voir avec les yeux des autres</h3>
+        <p>Les élèves interprètent des scènes courantes sous différents angles (par exemple, celui du professeur, celui de l'élève, celui du nouveau camarade). Cela aide à développer l'empathie et la tolérance face aux différentes façons de voir la vie scolaire.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-comments" style="font-size:2rem;"></i>
+      <div>
+        <h3>Mots qui construisent</h3>
+        <p>En cercle, chaque élève dit un mot positif à son camarade de droite. Ensuite, on réfléchit à la manière dont les mots peuvent affecter nos émotions. Cela favorise un langage respectueux.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-user-shield" style="font-size:2rem;"></i>
+      <div>
+        <h3>Défenseurs du respect</h3>
+        <p>On choisit une paire de 'défenseurs' qui observent la classe et soulignent les attitudes respectueuses. Ensuite, ils les commentent à voix haute comme reconnaissance. Cela renforce les comportements positifs et met en valeur les bons traitements.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-balance-scale" style="font-size:2rem;"></i>
+      <div>
+        <h3>Débat juste</h3>
+        <p>Un sujet controversé est abordé et un petit débat est organisé par équipes. On évalue non seulement les arguments, mais aussi le respect de l'écoute et des interventions. Cela apprend à être en désaccord sans agresser.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-heart" style="font-size:2rem;"></i>
+      <div>
+        <h3>L'arbre du respect</h3>
+        <p>Un arbre est dessiné dans la classe. Chaque feuille représente une action respectueuse que les élèves ont vécue ou réalisée. Elles sont ajoutées au cours du mois. Cela renforce l'engagement collectif envers le bon traitement.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hands" style="font-size:2rem;"></i>
+      <div>
+        <h3>Les mains qui embrassent</h3>
+        <p>Chaque enfant dessine sa main et écrit sur chaque doigt une façon de démontrer du respect (écouter, partager, ne pas interrompre, etc.). Ensuite, ils les collent sur un mural. Cela visualise des attitudes concrètes de respect.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-quote-right" style="font-size:2rem;"></i>
+      <div>
+        <h3>Citacions qui nous inspirent</h3>
+        <p>On choisit des citations célèbres sur le respect et la tolérance. Les élèves les illustrent ou expliquent leur signification. Elles sont ensuite affichées dans la classe comme rappels visibles.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-user-friends" style="font-size:2rem;"></i>
+      <div>
+        <h3>Je t'écoute</h3>
+        <p>En binômes, l'un parle pendant une minute d'un sujet personnel et l'autre écoute sans interrompre. Ensuite, les rôles sont inversés. On réfléchit à l'importance d'écouter attentivement.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-star" style="font-size:2rem;"></i>
+      <div>
+        <h3>Le respect me fait sentir...</h3>
+        <p>Les enfants complètent la phrase avec des dessins ou des mots et la partagent avec le groupe. Un mural est créé avec les réponses. Cela met en lumière l'impact émotionnel du respect.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hands-wash" style="font-size:2rem;"></i>
+      <div>
+        <h3>Le respect commence avec moi</h3>
+        <p>On réfléchit au respect de soi-même : corps, émotions, temps. Chaque élève propose une habitude qui montre de l'autorespect. Cela renforce l'estime de soi saine.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hand-holding-heart" style="font-size:2rem;"></i>
+      <div>
+        <h3>Boîte de tolérance</h3>
+        <p>On écrit sur des papiers anonymes ce que l'on a du mal à tolérer (bruit, erreurs, différences). Ils sont placés dans une boîte et on réfléchit en groupe sur la manière de s'améliorer. Cela favorise l'autorégulation et l'empathie.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-dice" style="font-size:2rem;"></i>
+      <div>
+        <h3>Les dés du respect</h3>
+        <p>On lance des dés avec des questions ou des défis : 'Comment peux-tu montrer du respect pendant la récréation ?', 'Joue une scène où quelqu'un interrompt et ensuite respecte'. Un jeu ludique pour consolider les concepts.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-pencil-alt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Lettre à un camarade différent</h3>
+        <p>On écrit une lettre gentille à quelqu'un de la classe avec des goûts ou des habitudes différentes. Cela favorise l'inclusion et la valorisation positive de la diversité.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-magic" style="font-size:2rem;"></i>
+      <div>
+        <h3>Le mot magique</h3>
+        <p>On choisit un mot clé (s'il vous plaît, merci, pardon...) qui doit être utilisé en tout temps pendant la journée. Ceux qui l'utilisent le plus souvent de manière authentique sont récompensés. Cela revalorise un langage courtois.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-map" style="font-size:2rem;"></i>
+      <div>
+        <h3>La route du respect</h3>
+        <p>On conçoit un chemin symbolique dans la classe (carton ou mural) où chaque étape représente une attitude : écouter, prendre soin, attendre son tour, etc. Chaque semaine, on avance si cela est respecté. Motivation visuelle pour de bonnes habitudes.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-microphone" style="font-size:2rem;"></i>
+      <div>
+        <h3>Radio scolaire du respect</h3>
+        <p>On crée des messages ou des annonces audio brèves avec des idées ou des récits sur le respect. Ils sont diffusés par les haut-parleurs ou lors des assemblées. Cela favorise la communication positive.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-award" style="font-size:2rem;"></i>
+      <div>
+        <h3>Prix de l'empathie</h3>
+        <p>Chaque vendredi, on vote (anonymement) pour un camarade qui a montré le plus de respect ou d'empathie. Un diplôme symbolique lui est remis. Cela renforce les comportements positifs et donne l'exemple.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hat-cowboy" style="font-size:2rem;"></i>
+      <div>
+        <h3>Changer de chapeau</h3>
+        <p>On propose de jouer le rôle d'une autre personne du groupe (enseignant, concierge, autre élève) pour réfléchir à ce que l'on ressent lorsque l'on n'est pas respecté. Cela développe l'empathie de manière puissante.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="videos"><div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Pierre-papier-ciseaux</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/YPy2La2THM4?si=UyTyppqMfnXP2zfw" title="Pierre-papier-ciseaux" frameborder="0" allowfullscreen></iframe>
+      <p>Ce qui est vraiment important lorsque nous parlons de détecter et de prévenir le harcèlement, c'est savoir éduquer au respect. Cela s'enseigne par l'éducation émotionnelle que nous donnons aux enfants dès leur plus jeune âge et celle que nous, les adultes, avons aussi. Les deux sont également importantes.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Respecte la différence</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/xiBNYjVVRDg?si=cv8ItFZ5xHpZekv5" title="Respecte la différence" frameborder="0" allowfullscreen></iframe>
+      <p>On parle toujours des droits humains, comme le droit à la vie, l'égalité entre les hommes et les femmes, l'éducation gratuite, ou la liberté d'expression. Mais, en tiennons-nous vraiment compte ? Faites la différence.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Snack Attack (Préjugé social)</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/38y_1EWIE9I" title="Snack Attack" frameborder="0" allowfullscreen></iframe>
+      <p>Une histoire amusante sur la façon dont les préjugés et les apparences peuvent nous tromper, avec une leçon finale sur la tolérance.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Héros de la cour de récréation (Harcèlement scolaire)</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/NXGT3s0xHXY?si=xn4Rpl1M4itrzT2O" title="Héros de la cour de récréation" frameborder="0" allowfullscreen></iframe>
+      <p>Campagne contre le harcèlement scolaire avec des interviews et des reconstitutions, centrée sur la façon d'agir avec respect et de défendre les autres.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Les chaussures de Luis</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/CIPjvi_INAo?si=5uRiuC_I165E97oW" title="Les chaussures de Luis" frameborder="0" allowfullscreen></iframe>
+      <p>Luis raconte sa première journée dans une nouvelle école, pourquoi il n'est pas accepté et l'importance de l'inclusion.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Float</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/bMgT19AzEDY" title="Float court-métrage Pixar" frameborder="0" allowfullscreen></iframe>
+      <p>Sur l'acceptation des différences à travers l'histoire d'un père et de son fils.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Le cirque des papillons</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/od2lg1ZC20s" title="Le cirque des papillons" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage primé sur la dignité humaine, le dépassement de soi et le respect des personnes handicapées physiques.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Les yeux d'un enfant</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/fj60_kNQQP8" title="Les yeux d'un enfant" frameborder="0" allowfullscreen></iframe>
+      <p>Souligne que les handicaps n'existent que dans les yeux de ceux qui regardent avec des préjugés.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Corde</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/4INwx_tmTKw" title="Corde court-métrage Goya" frameborder="0" allowfullscreen></iframe>
+      <p>Goya 2014 : histoire d'amitié sans barrières, d'inclusion et de respect.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Slap her</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/b2OcKQ_mbiQ" title="Slap her : réactions des enfants" frameborder="0" allowfullscreen></iframe>
+      <p>Expérience sociale sur la violence de genre, qui enseigne que frapper, même pour rire, n'est pas acceptable.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Le garçon aux cheveux rouges</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/By3GNhGXFNo?si=z5Cea48aQBnmFM63" title="Le garçon aux cheveux rouges" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage sur le harcèlement d'un enfant roux, montrant comment les préjugés font mal et comment les affronter avec respect.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Expérience sociale</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/AfjKrRnNoxk?si=ImgLbtCKCe5ezcLV" title="Expérience sociale" frameborder="0" allowfullscreen></iframe>
+      <p>A la Naked Heart Foundation, ils ont décidé de mener une expérience en construisant deux salles de jeux identiques. L'une était vide, l'autre avait un enfant à l'intérieur.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Les yeux d'un enfant</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/fj60_kNQQP8" title="Les yeux d'un enfant" frameborder="0" allowfullscreen></iframe>
+      <p>Montre que le handicap n'existe que dans les yeux de ceux qui choisissent de regarder avec des préjugés.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Slap her</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/b2OcKQ_mbiQ" title="Slap her : réactions des enfants" frameborder="0" allowfullscreen></iframe>
+      <p>Expérience sociale qui dénonce la violence de genre – même dans les jeux.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Nouvelle robe</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/LVdfnQPUYLY" title="Nouvelle robe" frameborder="0" allowfullscreen></iframe>
+      <p>Aborde l'identité de genre et l'acceptation à l'école au quotidien.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Trans*Happy</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/DsojYWvCSF0" title="Trans*Happy" frameborder="0" allowfullscreen></iframe>
+      <p>Documentaire interactif qui met en lumière les expériences de l'enfance trans.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Naissance de la luciérnaga</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/CVwDulxOUzY" title="Naissance de la luciérnaga" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage animé avec des références symboliques sur l'identité et la croissance.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Comme il est facile de catégoriser les gens</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/fXBXOaLcMZg?si=EmEGnveQVqyEFamJ" title="Comme il est facile de catégoriser les gens" frameborder="0" allowfullscreen></iframe>
+      <p>La vidéo danoise qui nous rappelle à quel point il est facile de mettre les gens dans des cases.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Le voyage de Maria</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/txdjo2TdV4k" title="Le voyage de Maria" frameborder="0" allowfullscreen></iframe>
+      <p>Voyage sensoriel dans le monde d'une petite fille autiste, plein de sensibilité et d'inclusion.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Académie des spécialistes</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/fCoBk1tWYEg" title="Académie des spécialistes" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage pédagogique sur les compétences uniques de l'autisme, par la Fondation Orange.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Ian</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/OHma93eZiBY" title="Ian court-métrage de Campanella" frameborder="0" allowfullscreen></iframe>
+      <p>Histoire émouvante sur le handicap, l'inclusion et l'appartenance scolaire.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Les couleurs des fleurs</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/5gB5hgKRv84?si=ysKbvng51aF2XN6E" title="Les couleurs des fleurs" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage sur le handicap visuel.</p>
+    </div>
+
+</div></section>
+<section id="tic"><div class="card-container">
+   <div class="card">
+      <h3><i class="fas fa-gamepad"></i> Jeux pour éduquer aux valeurs et aux émotions</h3>
+      <p>Miniland propose des ressources éducatives qui aident les enfants à vivre avec respect, tolérance et empathie dès leur plus jeune âge. Ces ressources permettent d'identifier les émotions et de comprendre le monde qui les entoure.</p>
+      <a href="https://minilandgroup.com/educational/es/diversidad-y-emociones/emociones-valores/" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-users"></i> 10 jeux sur la tolérance pour les enfants</h3>
+      <p>Educo propose une série de jeux interactifs conçus pour apprendre aux enfants à reconnaître et à pratiquer la tolérance dans diverses situations de la vie quotidienne.</p>
+      <a href="https://www.educo.org/blog/10-juegos-sobre-tolerancia-para-ninos-y-ninas" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-comments"></i> Dynamiques et jeux de groupe pour les enfants sur la tolérance</h3>
+      <p>TikTok présente des dynamiques et des jeux de groupe qui favorisent la tolérance et le respect entre les enfants, encourageant l'apprentissage des valeurs de manière ludique.</p>
+      <a href="https://www.tiktok.com/discover/dinamicas-y-juegos-grupales-para-ni%C3%B1os-sobre-la-tolerancia" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-laptop"></i> Jeux et activités pour apprendre et profiter de la technologie en famille</h3>
+      <p>INCIBE propose des jeux interactifs pédagogiques, comme des puzzles et des mots croisés en ligne, pour travailler des valeurs importantes telles que le respect, la sécurité et la responsabilité sur Internet.</p>
+      <a href="https://www.incibe.es/menores/blog/juegos-actividades-familias" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-users"></i> Programme RETO. Respect, Empathie et Tolérance</h3>
+      <p>Amazon présente un programme d'éducation émotionnelle basé sur le respect, l'empathie et la tolérance pour les enfants de trois à douze ans, avec des activités amusantes et divertissantes pour apprendre à identifier, exprimer et gérer les émotions.</p>
+      <a href="https://www.amazon.com/Programa-Tolerancia-Actividades-Educaci%C3%B3n-Emocional/dp/8433029274" target="_blank">Accéder à la ressource</a>
+    </div>
+</div></section>
+<section id="lecturas"><div class="card-container">
+<div class="card">
+  <img src="img/sneetches.jpg" alt="The Sneetches" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>The Sneetches and Other Stories</h3>
+  <p><strong>Auteur :</strong> Dr. Seuss<br>
+     <strong>Âge :</strong> 9-12 ans<br>
+     <strong>ISBN :</strong> 9780007350813</p>
+  <p>Collection de fables qui remettent en question la discrimination et montrent comment le respect et l'égalité construisent des groupes plus justes et inclusifs.</p>
+</div>
+
+<div class="card">
+  <img src="img/something_else.jpg" alt="Something Else" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Something Else</h3>
+  <p><strong>Auteur :</strong> Kathryn Cave & Chris Riddell<br>
+     <strong>Âge :</strong> 9-12 ans<br>
+     <strong>ISBN :</strong> 9780140549070</p>
+  <p>Le protagoniste exclut quelque chose de différent jusqu'à ce qu'il comprenne la valeur du respect et de l'amitié. Lauréat du prix de l'UNESCO pour la tolérance.</p>
+</div>
+
+<div class="card">
+  <img src="img/bad_stripes.jpg" alt="A Bad Case of Stripes" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>A Bad Case of Stripes</h3>
+  <p><strong>Auteur :</strong> David Shannon<br>
+     <strong>Âge :</strong> 9-12 ans<br>
+     <strong>ISBN :</strong> 9780439553170</p>
+  <p>Camilla a peur de se montrer telle qu'elle est par peur du groupe. Une histoire créative qui enseigne l'importance d'être soi-même et de respecter les différences.</p>
+</div>
+
+<div class="card">
+  <img src="img/antiracist_baby.jpg" alt="Antiracist Baby" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Antiracist Baby</h3>
+  <p><strong>Auteur :</strong> Ibram X. Kendi & Ashley Lukashevsky<br>
+     <strong>Âge :</strong> 9-12 ans<br>
+     <strong>ISBN :</strong> 9780593110410</p>
+  <p>Un livre qui propose des actions concrètes pour reconnaître et déconstruire les préjugés. Favorise le respect, l'empathie et la conscience antiraciste dès le plus jeune âge.</p>
+</div>
+
+<div class="card">
+  <img src="img/friends_from_other_side.jpg" alt="Friends from the Other Side" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Friends from the Other Side</h3>
+  <p><strong>Auteur :</strong> Gloria E. Anzaldúa<br>
+     <strong>Âge :</strong> 9-12 ans<br>
+     <strong>ISBN :</strong> 9780516801131</p>
+  <p>Bilingue et émouvant, il raconte l'amitié entre une fille chicana et un garçon immigré. Une histoire puissante sur l'empathie, l'acceptation et le sentiment d'appartenance.</p>
+</div>
+
+<div class="card">
+  <img src="img/i_see_you_buddha.jpg" alt="I See You, Buddha" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>I See You, Buddha</h3>
+  <p><strong>Auteur :</strong> Josh Bartok<br>
+     <strong>Âge :</strong> 9-12 ans<br>
+     <strong>ISBN :</strong> 9780593206670</p>
+  <p>Incorporé dans une liste de livres sur la diversité religieuse, il enseigne la compassion et le respect des croyances personnelles et des autres.</p>
+</div>
+
+</div></section>
+
+
+<footer>
+    EscolaDiversa - Competencia Clave: Respeto Tolerancia
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

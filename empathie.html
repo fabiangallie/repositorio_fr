@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Empathie</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+       box-shadow: 0 0 10px 10px #00ffff66, 0 0 120px 60px #00ffff33 inset;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .inicio-btn {
+      background: #00ffff;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav button {
+      background: #111;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav button:hover {
+      background: #00ffff;
+      color: #000;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #00ffff44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ffff22;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card p, .card a {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      text-decoration: underline;
+    }
+
+    .card img, iframe {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+.card a {
+  display: inline-block;
+  color: #00ffff;
+  border: 1px solid #00ffff;
+  padding: 0.4em 0.8em;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  text-transform: uppercase;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card a:hover {
+  background-color: #00ffff;
+  color: #000;
+}
+
+</style>
+</head>
+<body>
+<header>
+<h1>Empathie</h1>
+<p>Reconnaître et comprendre les sentiments des autres, en agissant avec sensibilité et respect</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book-open"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-people-arrows"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+
+<section id="dinamicas">
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Devinettes d’émotions</h3>
+      <p>L’enseignant prépare des cartes avec des émotions de base (joie, tristesse, colère, peur, surprise, etc.). Les élèves, à tour de rôle, tirent une carte sans la montrer et doivent représenter l’émotion par des gestes, sans parler. Les autres devinent et partagent une situation similaire. Idéal pour initier à l’éducation émotionnelle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Dessin émotionnel</h3>
+      <p>Chaque élève dessine un visage exprimant une émotion récemment vécue (réelle ou imaginaire). Puis il explique au groupe ce que représente le dessin, dans quelle situation il s’est produit et comment il a réagi. Cela favorise l’identification et le langage émotionnels.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Sculptures de sentiments</h3>
+      <p>Avec de la pâte à modeler ou de l’argile, les élèves représentent une émotion de manière abstraite ou figurative. Ensuite, ils présentent leur œuvre et expliquent sa signification. Activité d’expression non verbale.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Danse figée avec émotions</h3>
+      <p>Les élèves dansent librement sur de la musique. Lorsque la musique s’arrête, l’enseignant annonce une émotion à représenter uniquement par le corps et le visage. Ensuite, ils partagent une expérience liée à cette émotion. Dynamique active et expressive.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Miroirs</h3>
+      <p>Par deux, l’un exprime une émotion par des gestes (regarder au sol, croiser les bras, sourire...). L’autre imite exactement comme un miroir. Puis on inverse les rôles. Cela développe l’observation et la connexion non verbale.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Changement de rôles</h3>
+      <p>Dans des situations conflictuelles (par exemple une dispute), deux élèves jouent la scène en inversant les rôles : l’agresseur devient la victime et inversement. Ensuite, on réfléchit aux sentiments vécus dans chaque rôle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Histoires avec perspective</h3>
+      <p>On lit un conte à voix haute. Chaque élève réécrit un passage du point de vue d’un autre personnage (par ex. : le loup dans Le Petit Chaperon Rouge). Puis on débat sur la manière dont la perspective modifie l’histoire.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Monde à l’envers</h3>
+      <p>On présente une situation d’injustice (par exemple : tout le monde accuse un élève perturbateur alors qu’il est innocent). Les élèves analysent la scène depuis différents points de vue. Cela invite à réfléchir aux préjugés.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Chaîne de compliments</h3>
+      <p>En cercle, chaque élève dit un compliment sincère à son voisin de droite. On continue jusqu’à fermer le cercle. Cela renforce l’estime de soi et la reconnaissance des qualités des autres.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Journal de gratitude partagé</h3>
+      <p>Durant une semaine, les élèves notent des actes empathiques observés. À la fin, chacun partage une expérience significative. Cela valorise les gestes positifs du quotidien.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Jeu de confiance</h3>
+      <p>Par deux, un élève a les yeux bandés. L’autre le guide avec sa voix à travers un petit parcours. Ensuite, ils échangent les rôles. On travaille la confiance, l’écoute active et la responsabilité.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Vidéos de réflexion</h3>
+      <p>On projette de courts-métrages portant sur les émotions (comme “Snack Attack”). Ensuite, on discute en groupe des sentiments des personnages et des réactions possibles. Support visuel d’analyse émotionnelle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Cartes de bienvenue émotionnelles</h3>
+      <p>La classe conçoit des cartes à offrir aux nouveaux camarades. Elles incluent des messages de bienvenue, de soutien et d’empathie. On renforce l’accueil et l’appartenance au groupe.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Cercle d’écoute</h3>
+      <p>En cercle, un volontaire partage un problème. Un autre reformule ce qu’il a compris. Le premier confirme ou corrige. Puis d’autres proposent des idées. Améliore l’écoute active et la compréhension mutuelle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Jeu de rôle – conflits</h3>
+      <p>Les élèves rejouent des conflits réels ou fictifs. Ensuite, on réfléchit ensemble : comment chacun s’est-il senti ? Quelles solutions étaient possibles ? Encourage la résolution pacifique.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Lettres au futur</h3>
+      <p>Les élèves écrivent une lettre à leur “moi” du futur, exprimant comment ils veulent se comporter envers les autres (gentils, respectueux, compréhensifs). Volontairement, certains lisent leur lettre. Exercice d’introspection.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Projet Buddy</h3>
+      <p>On assigne des binômes pendant une semaine. Chaque élève observe, accompagne et soutient son camarade. À la fin, chacun partage ce qu’il a vécu. Fait naître le souci de l’autre.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Jeux coopératifs en équipe</h3>
+      <p>Les élèves doivent résoudre des défis (construire une tour, par ex.) où la coopération est essentielle. On analyse ensuite les ressentis : aider, être aidé, coopérer. Expérience de groupe.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Contes tournants</h3>
+      <p>Chaque élève écrit une partie d’histoire en incarnant un personnage vivant une émotion. Le suivant continue depuis une autre émotion. On lit l’ensemble et on discute de l’évolution émotionnelle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-lightbulb"></i> Route des émotions</h3>
+      <p>On place des affiches d’émotions dans la classe. Chaque élève marche et s’arrête devant une émotion qu’il a ressentie cette semaine. Il peut partager son vécu. Normalise et valorise les émotions.</p>
+    </div>
+
+  </div>
+</section>
+<section id="videos">
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-play-circle"></i> Qu’est-ce que l’empathie ?</h3>
+      <iframe allowfullscreen="" src="https://www.youtube.com/embed/STdJ__8ORyE" width="100%" height="215"></iframe>
+      <p>Explication visuelle et simple sur la façon de comprendre et partager les sentiments des autres.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-play-circle"></i> Exemples d’empathie chez les enfants</h3>
+      <iframe allowfullscreen="" src="https://www.youtube.com/embed/1Evwgu369Jw" width="100%" height="215"></iframe>
+      <p>Cas du quotidien montrant comment pratiquer l’empathie entre camarades.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Indifferent</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/KsYzIyMrSBQ" frameborder="0" allowfullscreen></iframe>
+      <p>Court métrage d’animation montrant comment les petits gestes sans empathie affectent les autres. Idéal pour lancer le sujet.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Empathie et solidarité</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/Nhxdwo1Y2Zg" frameborder="0" allowfullscreen></iframe>
+      <p>Court métrage espagnol illustrant des situations où l’empathie transforme les relations et favorise la solidarité.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Brené Brown sur l’empathie</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/1Evwgu369Jw" frameborder="0" allowfullscreen></iframe>
+      <p>Présentation claire et inspirante sur ce qu’est l’empathie et comment la pratiquer — parfait pour enseignants et ados.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Le pouvoir de l’empathie</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/qW1MGzkmoBg" frameborder="0" allowfullscreen></iframe>
+      <p>Animation brève montrant comment l’empathie nous connecte — et en quoi elle diffère de la compassion.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Loop (Pixar SparkShorts)</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/xmjEvfKBAvE?si=XBnEFVT83CFjdGel" frameborder="0" allowfullscreen></iframe>
+      <p>Court métrage illustrant l’inclusion et la communication entre une fillette non verbale et un camarade qui apprend à se connecter avec empathie.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Kitbull (Pixar SparkShorts)</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/AZS5cgybKcI" frameborder="0" allowfullscreen></iframe>
+      <p>Histoire muette montrant comment l’amitié et la compassion naissent entre deux êtres différents.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Short film animé sur l’empathie et la non-violence</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/EraVyWqyS_Y" frameborder="0" allowfullscreen></iframe>
+      <p>Court métrage animé présentant des scénarios de non-violence et d’empathie de façon claire et visuelle — parfait pour un travail collectif.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> LA VALEUR DE L'EMPATHIE !!</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/4Hgmfkg-UTk" frameborder="0" allowfullscreen></iframe>
+      <p>Vidéo directe expliquant comment les enfants peuvent construire une atmosphère scolaire positive grâce à l’empathie.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Empathie : l’histoire du hérisson</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/lcMCG5R6c0k" frameborder="0" allowfullscreen></iframe>
+      <p>Court métrage racontant symboliquement comment un hérisson apprend à se connecter à son entourage et à faire preuve d’empathie.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Empathy – A Short Film</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/1E39jpNN9eQ" frameborder="0" allowfullscreen></iframe>
+      <p>Vidéo sans dialogues illustrant différentes situations d’empathie, idéale pour susciter la réflexion collective.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Purl (Pixar SparkShorts)</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/B6uuIHpFkuo" frameborder="0" allowfullscreen></iframe>
+      <p>Court métrage sur le sentiment d’exclusion et l’acte d’empathie envers quelqu’un qui se sent différent.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Partager la nourriture</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/rDFWsUe6Auo?si=WPsWiQUJi40mMCqb" frameborder="0" allowfullscreen></iframe>
+      <p>On montre aux enfants l’importance de partager, en particulier la nourriture — un message simple sur la générosité.</p>
+    </div>
+
+  </div>
+</section>
+<section id="tic">
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-mobile-alt" style="color:#ffd54f;"></i> Empatia (application mobile)</h3>
+      <p>Application avec des cartes interactives pour explorer les émotions, les valeurs et les pensées qui favorisent l’empathie et la conscience de soi.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.jogoempatia.jogoempatia" target="_blank" style="color:#00ffff; text-decoration:underline;">Télécharger l'app</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-globe" style="color:#ffd54f;"></i> Empathie – Ressources éducatives</h3>
+      <p>Objet d’apprentissage simple pour l’école primaire, avec des activités numériques pas à pas pour travailler l’empathie.</p>
+      <a href="https://www3.gobiernodecanarias.org/medusa/ecoescuela/recursosdigitales/2020/04/02/empatia-2/" target="_blank" style="color:#00ffff; text-decoration:underline;">Voir la ressource</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-tablet-alt" style="color:#ffd54f;"></i> VR Empathie (escape-room virtuel)</h3>
+      <p>Environnement virtuel avec des défis de type escape-room pour encourager l’empathie, la collaboration et la résolution collective.</p>
+      <a href="https://repository.ugc.edu.co/bitstreams/ba9fa7bb-3f32-4610-8c78-5e1a96ac05fe/download" target="_blank" style="color:#00ffff; text-decoration:underline;">Télécharger le guide (PDF)</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-puzzle-piece" style="color:#ffd54f;"></i> Smile & Learn (plateforme éducative)</h3>
+      <p>Plateforme avec plus de 5 000 activités, dont des modules pour développer l’empathie et les compétences sociales à l’école maternelle et primaire.</p>
+      <a href="https://princessandowlstories.com/realidad-virtual-empatia-ciberbullying-dislexia/" target="_blank" style="color:#00ffff; text-decoration:underline;">Voir les infos</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-brain" style="color:#ffd54f;"></i> Éducation émotionnelle + TIC (article)</h3>
+      <p>Document actualisé expliquant comment intégrer les TIC comme Padlet, Kahoot ou forums dans le développement de l’empathie et des compétences sociales.</p>
+      <a href="https://institutovera.org.ar/wp-content/uploads/2025/01/0.-Revista-20-ano-5.pdf" target="_blank" style="color:#00ffff; text-decoration:underline;">Voir le PDF</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-gamepad" style="color:#ffd54f;"></i> Jeux numériques collaboratifs</h3>
+      <p>Jeux conçus pour les élèves du primaire afin de promouvoir le travail d’équipe, la communication et l’empathie dans des environnements numériques.</p>
+      <a href="https://ceipfelixplaza.es/juegos-digitales-como-recurso-para-el-aprendizaje-colaborativo-en-primaria/" target="_blank" style="color:#00ffff; text-decoration:underline;">Voir des exemples</a>
+    </div>
+
+  </div>
+</section>
+<section id="lecturas"><div class="card-container">
+
+  <div class="card">
+    <img src="img/cuerdas.jpg" alt="Cordes" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Cordes</h3>
+    <p><strong>Auteur :</strong> Pedro Solís<br>
+    <strong>Âge :</strong> 8-12 ans<br>
+    <strong>ISBN :</strong> 9788426390950</p>
+    <p>Basé sur le court-métrage primé aux Goya, ce livre raconte l’amitié entre une fille et un camarade atteint de paralysie cérébrale. Tendre et plein d’empathie.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/yovoyconmigo.jpg" alt="Je vais avec moi-même" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Je vais avec moi-même</h3>
+    <p><strong>Auteur :</strong> Raquel Díaz Reguera<br>
+    <strong>Âge :</strong> 6-10 ans<br>
+    <strong>ISBN :</strong> 9788494411342</p>
+    <p>Une histoire sur l’importance d’être soi-même et d’accepter les autres. Idéale pour travailler l’empathie et le respect.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/elpunto.jpg" alt="Le point" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Le point</h3>
+    <p><strong>Auteur :</strong> Peter H. Reynolds<br>
+    <strong>Âge :</strong> 6-10 ans<br>
+    <strong>ISBN :</strong> 9788496388352</p>
+    <p>Ce livre encourage la confiance et pousse les enfants à valoriser et soutenir les efforts des autres, générant des attitudes empathiques.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/porcuatroesquinitasdenada.jpg" alt="Pour quatre petits coins de rien du tout" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Pour quatre petits coins de rien du tout</h3>
+    <p><strong>Auteur :</strong> Jérôme Ruillier<br>
+    <strong>Âge :</strong> 5-8 ans<br>
+    <strong>ISBN :</strong> 9788426137814</p>
+    <p>Un récit sur l’inclusion, les différences et l’empathie. Petit Carré ne rentre pas, mais ses amis cherchent une solution sans changer son essence.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/amigoseescribeconh.png" alt="Ami s’écrit avec H" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Ami s’écrit avec H</h3>
+    <p><strong>Auteur :</strong> María Fernanda Heredia<br>
+    <strong>Âge :</strong> 9–12 ans</p>
+    <p>Antonia ne veut pas connaître H, le nouvel élève. À travers leur relation, elle découvre l’importance d’écouter l’autre et de reconnaître les sentiments, favorisant l’empathie.</p>
+  </div>
+
+  <div class="card">
+    <img src="img/unmonstruovieneaverme.jpg" alt="Un monstre vient me voir" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+    <h3>Un monstre vient me voir</h3>
+    <p><strong>Auteur :</strong> Patrick Ness (d’après une idée de Siobhán Dowd)<br>
+    <strong>Âge :</strong> 10–14 ans<br>
+    <strong>ISBN :</strong> 9781406325022</p>
+    <p>Conor fait face au cancer de sa mère et au harcèlement scolaire. Grâce à un monstre intérieur, il apprend à comprendre ses émotions et à se connecter aux autres. Une histoire profonde sur l’empathie et la résilience.</p>
+  </div>
+
+</div></section>
+
+
+<footer>
+    Escola Diversa - Competencia Clave: Empatía
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

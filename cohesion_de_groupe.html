@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cohesion de Grupo</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #00ff9966, 0 0 120px 60px #00ff9933 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ff99;
+      text-shadow: 0 0 10px #00ff9988;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #00ff99;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #00ff99;
+      border: 2px solid #00ff99;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #00ff99;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #00ff9944;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ff9922;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ff99;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #00ff99;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Cohesion de Grupo</h1>
+<p>Renforcer le sentiment d’appartenance et l’identité de groupe</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+<section id="dinamicas"><div class="card-container">
+
+  <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+    <i class="fas fa-users" style="font-size:2rem;"></i>
+    <div>
+      <h3>La toile de laine</h3>
+      <p>Assis en cercle, un élève lance une pelote de laine à un autre en disant son nom et quelque chose de positif sur lui. On répète jusqu’à former une toile symbolique. Renforce la connexion et la reconnaissance entre camarades.</p>
+    </div>
+  </div>
+
+  <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #00ff88; margin-bottom:1rem; border-radius:12px;">
+    <i class="fas fa-comments" style="font-size:2rem;"></i>
+    <div>
+      <h3>Moi aussi</h3>
+      <p>Chaque élève dit quelque chose de personnel (« j’aime la glace », « j’ai un chat ») et ceux qui partagent cela se lèvent en disant « moi aussi ! ». Met en évidence les affinités et brise les préjugés.</p>
+    </div>
+  </div>
+
+  <div class="card"><i class="fas fa-handshake" style="font-size:2rem;"></i><div><h3>Contrat de groupe</h3><p>Un pacte de classe est élaboré avec des engagements sur le respect, la collaboration et l’écoute. Tous le signent. Renforce le sentiment d’appartenance et de responsabilité commune.</p></div></div>
+
+  <div class="card"><i class="fas fa-brain" style="font-size:2rem;"></i><div><h3>Casse-tête humain</h3><p>Chaque élève reçoit une pièce d’un puzzle et doit retrouver ses camarades pour le compléter. Renforce la collaboration et symbolise que chacun est essentiel.</p></div></div>
+
+  <div class="card"><i class="fas fa-smile-beam" style="font-size:2rem;"></i><div><h3>La boîte à compliments</h3><p>Durant la semaine, les élèves écrivent des notes positives à leurs camarades et les déposent dans une boîte. On les lit en groupe à la fin de la semaine. Favorise l’empathie et la valorisation mutuelle.</p></div></div>
+
+  <div class="card"><i class="fas fa-route" style="font-size:2rem;"></i><div><h3>Parcours de confiance</h3><p>Par deux, l’un a les yeux fermés et est guidé par la voix de l’autre à travers des obstacles. Puis on échange les rôles. Nécessite communication et confiance.</p></div></div>
+
+  <div class="card"><i class="fas fa-cubes" style="font-size:2rem;"></i><div><h3>Construction coopérative</h3><p>Avec des matériaux simples, le groupe doit construire une tour ou une figure. Chaque enfant apporte idées et matériel. On évalue la coopération plus que le résultat.</p></div></div>
+
+  <div class="card"><i class="fas fa-star" style="font-size:2rem;"></i><div><h3>Qui suis-je ?</h3><p>Chaque enfant remplit une fiche avec ses goûts, talents et rêves. Puis il la présente. Encourage l’identité et l’acceptation de l’autre.</p></div></div>
+
+  <div class="card"><i class="fas fa-sync" style="font-size:2rem;"></i><div><h3>Changement de place</h3><p>Les élèves changent de place avec ceux qui partagent quelque chose en commun (couleur préférée, frères/sœurs, hobbies). Encourage la reconnaissance des similitudes.</p></div></div>
+
+  <div class="card"><i class="fas fa-heart" style="font-size:2rem;"></i><div><h3>Chaîne de gentillesse</h3><p>Pendant une semaine, chaque élève doit faire une action bienveillante envers un autre sans dire qui l’a fait. À la fin, les gestes sont révélés. Favorise l’altruisme et la connexion.</p></div></div>
+
+  <div class="card"><i class="fas fa-users-cog" style="font-size:2rem;"></i><div><h3>Défi collaboratif</h3><p>En petits groupes, les élèves doivent résoudre un défi (puzzle, jeu logique, escape game). Ensuite, ils réfléchissent aux rôles et à la coopération.</p></div></div>
+
+  <div class="card"><i class="fas fa-pen-nib" style="font-size:2rem;"></i><div><h3>Histoires enchaînées</h3><p>Chaque élève écrit une ligne d’une histoire et la passe. On lit à la fin comme un récit collectif. Stimule la créativité partagée et l’humour.</p></div></div>
+
+  <div class="card"><i class="fas fa-magic" style="font-size:2rem;"></i><div><h3>Mon super-pouvoir</h3><p>Chaque élève imagine un super-pouvoir et comment il l’utiliserait pour améliorer la classe. On partage et on valorise. Renforce l’estime de soi et l’intégration.</p></div></div>
+
+  <div class="card"><i class="fas fa-image" style="font-size:2rem;"></i><div><h3>La fresque du groupe</h3><p>On crée une fresque collective avec photos, dessins ou mots représentant l’identité du groupe. Elle est affichée en classe. Renforce le sentiment d’appartenance.</p></div></div>
+
+  <div class="card"><i class="fas fa-music" style="font-size:2rem;"></i><div><h3>Le rythme du groupe</h3><p>Assis en cercle, on crée un rythme corporel à répéter sans casser la chaîne. Encourage l’attention, la synchronisation et l’amusement.</p></div></div>
+
+  <div class="card"><i class="fas fa-microphone" style="font-size:2rem;"></i><div><h3>Interviews croisées</h3><p>Par deux, les élèves se posent des questions puis présentent l’autre au groupe. Encourage l’écoute active et la connaissance mutuelle.</p></div></div>
+
+  <div class="card"><i class="fas fa-gamepad" style="font-size:2rem;"></i><div><h3>Mission collective</h3><p>Le groupe doit remplir une mission symbolique (sauver la planète, construire un vaisseau) à travers des tâches coopératives. Renforce la cohésion autour d’objectifs communs.</p></div></div>
+
+  <div class="card"><i class="fas fa-feather-alt" style="font-size:2rem;"></i><div><h3>L’objet mystère</h3><p>Un objet circule et celui qui l’a doit dire quelque chose de bien sur lui-même et sur un autre. Renforce l’estime de soi et l’appréciation collective.</p></div></div>
+
+  <div class="card"><i class="fas fa-search" style="font-size:2rem;"></i><div><h3>Chasse aux talents</h3><p>On identifie les talents uniques de chaque élève et on les affiche sur un « mur des talents ». Met en valeur la diversité du groupe et l’estime collective.</p></div></div>
+
+  <div class="card"><i class="fas fa-lightbulb" style="font-size:2rem;"></i><div><h3>Crée ton symbole de groupe</h3><p>Le groupe conçoit un logo ou un emblème qui les représente. On réfléchit à ce qui les unit. Renforce l’identité et le sentiment d’appartenance.</p></div></div>
+
+</div></section>
+<section id="videos"><div class="card-container">
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#4fc3f7;"></i> La puissance du travail d'équipe</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/4duPBWzf46E?si=W1CoG-cpizpEa6ec" title="The Power of Teamwork" frameborder="0" allowfullscreen></iframe>
+    <p>L’histoire d’un oiseau et d’une fourmi qui surmontent un défi ensemble. Encourage la coopération et le soutien mutuel.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Purl (cohésion et diversité)</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/B6uuIHpFkuo?si=nbhfndUnDvYvCpmC" title="Purl - Pixar SparkShorts" frameborder="0" allowfullscreen></iframe>
+    <p>Purl, une pelote de laine, apprend à s’intégrer et à transformer un environnement hostile. Parfait pour discuter inclusion et appartenance.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#f4c542;"></i> Les Fixies : travail d’équipe</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/LC3Ri4uTPe8" title="Teamwork | The Fixies" frameborder="0" allowfullscreen></iframe>
+    <p>Court métrage où les personnages coopèrent pour résoudre un problème technique. Bon exemple de collaboration efficace.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#7986cb;"></i> George le curieux : travail d’équipe</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/6RwXOh3hncQ" title="Curious George teamwork" frameborder="0" allowfullscreen></iframe>
+    <p>Le célèbre singe rejoint d'autres pour accomplir une mission. Montre que chaque membre apporte quelque chose de précieux.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#ba68c8;"></i> Apprenons le travail d’équipe</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/iiBrUwalKi0" title="Let's learn about teamwork" frameborder="0" allowfullscreen></iframe>
+    <p>Animation éducative expliquant pas à pas les bases de la coopération et du travail en équipe.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#ffcc80;"></i> Travail d’équipe et leadership</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/WbCxRMBFRFA" title="Teamwork and Leadership" frameborder="0" allowfullscreen></iframe>
+    <p>Clip motivant sur la manière dont chacun peut diriger à sa manière et contribuer au succès du groupe.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#80cbc4;"></i> Problème d’équipe !</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/EkKfjAlaJoE" title="Teamwork Trouble!" frameborder="0" allowfullscreen></iframe>
+    <p>Court métrage drôle où une équipe apprend à collaborer après avoir rencontré des obstacles initiaux.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#a1887f;"></i> Danse contre le harcèlement</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/4K02OxmV3-0?si=JeuuiEtvWXLd7Uwj" title="Bully Dance" frameborder="0" allowfullscreen></iframe>
+    <p>Animation sans paroles montrant comment une communauté s’unit pour faire face au harcèlement.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#ce93d8;"></i> Balance</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/vZiEt5RUYSk?si=DbXrwJtGexqJNOSs" title="Balance (1989)" frameborder="0" allowfullscreen></iframe>
+    <p>Court métrage primé sur un groupe devant équilibrer une plateforme. Belle métaphore sur l’équilibre et la coopération.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#81c784;"></i> 4 choses que nous apprenons du travail d'équipe</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/ag1V76oBMkM" title="4 Things We Learn From Teamwork" frameborder="0" allowfullscreen></iframe>
+    <p>Vidéo éducative illustrant quatre valeurs essentielles du travail en équipe : communication, respect, entraide et responsabilité.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#9575cd;"></i> Odo – Ensemble, c’est mieux</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/0egx2gu5w0M" title="Odo the Series | Teamwork Triumphs" frameborder="0" allowfullscreen></iframe>
+    <p>Épisode où Odo et ses amis combinent leurs talents pour relever un défi, soulignant la collaboration et l’amitié.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#ffb74d;"></i> Pixar – Pour les oiseaux (Travail en groupe)</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/HJg10H39FhE" title="For the Birds" frameborder="0" allowfullscreen></iframe>
+    <p>Court de Pixar avec plusieurs oiseaux perchés : excellente métaphore de la dynamique de groupe et des conséquences du manque d’empathie.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#e57373;"></i> Kitbull – Amitié et empathie</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/AZS5cgybKcI" title="Kitbull" frameborder="0" allowfullscreen></iframe>
+    <p>L’histoire touchante d’un chat errant et d’un pitbull maltraité qui développent une profonde amitié fondée sur la confiance et la tendresse.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#ff8a65;"></i> Expérience sociale – dessin libre</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/qDgLzEbFEb0" title="Expérience sociale enfants dessin" frameborder="0" allowfullscreen></iframe>
+    <p>Des enfants dessinent sans consigne. On observe comment naît l’influence collective et le partage d’idées.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-film" style="color:#81c784;"></i> Compétition vs Coopération – La caverne de Sherif</h3>
+    <iframe width="100%" height="215" src="https://www.youtube.com/embed/DDDubUeYttk" title="Compétition Vs Coopération Robber's Cave" frameborder="0" allowfullscreen></iframe>
+    <p>Expérience qui montre comment la compétition crée du conflit, tandis que des objectifs communs favorisent la coopération.</p>
+  </div>
+
+</div></section>
+<section id="tic"><div class="card-container">
+
+  <div class="card">
+    <h3><i class="fas fa-chalkboard-teacher"></i> <a href="https://padlet.com" target="_blank">Padlet</a></h3>
+    <p>Mur collaboratif où chaque élève peut partager des idées, réflexions ou images. Idéal pour rendre visibles les opinions et créer une identité de groupe.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-comments"></i> <a href="https://stormboard.com" target="_blank">Stormboard</a></h3>
+    <p>Tableau d’idées en ligne pour travailler visuellement en équipe. Permet les brainstormings, votes et commentaires collaboratifs.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-folder-open"></i> <a href="https://docs.google.com" target="_blank">Google Drive (Docs, Présentations)</a></h3>
+    <p>Documents partagés où tous les élèves peuvent écrire et construire ensemble des textes ou projets. Renforce la responsabilité collective.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-users"></i> <a href="https://www.classdojo.com" target="_blank">ClassDojo</a></h3>
+    <p>Plateforme qui renforce les attitudes positives et la connexion entre élèves, enseignant et familles. Favorise la cohésion affective du groupe.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-gamepad"></i> <a href="https://kahoot.com" target="_blank">Kahoot!</a></h3>
+    <p>Jeu de questions en équipe. Stimule la participation active, le respect des tours et l’apprentissage ludique en coopération.</p>
+  </div>
+
+  <div class="card">
+    <h3><i class="fas fa-check-circle"></i> <a href="https://www.plickers.com" target="_blank">Plickers</a></h3>
+    <p>Système de vote avec cartes qui permet de prendre des décisions collectives et de recueillir des retours immédiats de manière participative.</p>
+  </div>
+
+</div></section>
+<section id="lecturas"><div class="card-container">
+
+<div class="card">
+  <img src="img/somos_un_grupo.jpg" alt="Nous sommes un groupe et nous prenons soin les uns des autres" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Nous sommes un groupe et nous prenons soin les uns des autres</h3>
+  <p><strong>Auteur :</strong> Carambuco Éditions<br>
+     <strong>Âge :</strong> 9-12 ans</p>
+  <p>Album illustré montrant comment un groupe divers apprend à se soutenir, à communiquer et à travailler ensemble pour surmonter les défis. Parfait pour réfléchir à l'entraide et à la collaboration.</p>
+</div>
+
+<div class="card">
+  <img src="img/a_gran_partido.jpg" alt="Le grand match" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Le grand match</h3>
+  <p><strong>Auteur :</strong> Cuentopía (compilation)<br>
+     <strong>Âge :</strong> 9-12 ans</p>
+  <p>Conte sur une équipe qui apprend que l’important n’est pas de gagner, mais de coopérer et de s’entraider sans se soucier de qui brille le plus.</p>
+</div>
+
+<div class="card">
+  <img src="img/el_saco_de_pulgas.jpg" alt="Le sac aux puces" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Le sac aux puces</h3>
+  <p><strong>Auteur :</strong> Cuentopía (compilation)<br>
+     <strong>Âge :</strong> 9-12 ans</p>
+  <p>D’après un conte populaire, il montre comment chaque participant contribue à résoudre un problème commun. Une belle métaphore de la force collective et de la solidarité de groupe.</p>
+</div>
+
+<div class="card">
+  <img src="img/wonder.jpg" alt="La leçon d'August (Wonder)" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>La leçon d'August</h3>
+  <p><strong>Auteur :</strong> R. J. Palacio<br>
+     <strong>Âge :</strong> 11‑12 ans<br>
+     <strong>ISBN :</strong> 9780375869020</p>
+  <p>Auggie, un garçon avec une malformation faciale, entre au collège pour la première fois. Il subit le rejet, le harcèlement, puis l’acceptation. Son histoire montre comment un groupe peut se transformer grâce à l’amitié, l’empathie et le respect de la différence. Une lecture puissante sur la cohésion sociale.</p>
+</div>
+
+<div class="card">
+  <img src="img/juntos.jpg" alt="Ensemble" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Ensemble</h3>
+  <p><strong>Auteur :</strong> Émilie Chazerand<br>
+     <strong>Âge :</strong> 9-12 ans<br>
+     <strong>ISBN :</strong> Voir éditeurs</p>
+  <p>Album recommandé par les libraires pour sa promotion de l’intelligence collective et de l’union. Excellent pour réfléchir à l’apport de chacun au groupe.</p>
+</div>
+
+<div class="card">
+  <img src="img/volver_a_empezar.jpg" alt="Recommencer" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Recommencer</h3>
+  <p><strong>Auteur :</strong> Oliver Jeffers<br>
+     <strong>Âge :</strong> 9-12 ans</p>
+  <p>Conte visuel sur la communauté, la coopération et la résilience. Met en valeur l’entraide après une erreur ou un échec.</p>
+</div>
+
+</div></section>
+
+
+<footer>
+    EscolaDiversa - Competencia Clave: Cohesion Grupo
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

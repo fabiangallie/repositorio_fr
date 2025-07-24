@@ -1,0 +1,499 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Solidarité</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+    box-shadow: 0 0 10px 10px #ff33cc66, 0 0 120px 60px #ff33cc33 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff33cc;
+      text-shadow: 0 0 10px #ff33cc88;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #ff33cc;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #ff33cc;
+      border: 2px solid #ff33cc;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #ff33cc;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #ff33cc44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #ff33cc22;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #ff33cc;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #ff33cc;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Solidarité</h1>
+<p>Développer des attitudes d’aide, de coopération et d’empathie</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+
+<section id="dinamicas">
+  <div class="card-container">
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hand-holding-heart" style="font-size:2rem;"></i>
+      <div>
+        <h3>Chaîne solidaire</h3>
+        <p>Les élèves accomplissent une action solidaire chaque jour (aider, partager, consoler). Chaque action est écrite sur un carton et enchaînée pour décorer la classe. Elle visualise et renforce les comportements positifs.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-users" style="font-size:2rem;"></i>
+      <div>
+        <h3>Roue d'aide</h3>
+        <p>En cercle, chaque élève mentionne une situation où il a besoin d'aide. Un autre volontaire propose une solution ou une aide concrète. Développe l'empathie et la volonté de collaborer.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-seedling" style="font-size:2rem;"></i>
+      <div>
+        <h3>Potager solidaire</h3>
+        <p>Un petit potager scolaire est cultivé avec l'engagement de prendre soin des plantes ensemble. Le produit final peut être donné à une communauté voisine. Encourage le travail d'équipe et l'aide aux autres.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-handshake" style="font-size:2rem;"></i>
+      <div>
+        <h3>Banque du temps</h3>
+        <p>Chaque élève offre quelque chose qu'il sait faire pour aider ses camarades (lire, dessiner, écouter, etc.). Ils échangent des "bons pour du temps". Renforce la valeur du partage de compétences sans attendre de récompense.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-gift" style="font-size:2rem;"></i>
+      <div>
+        <h3>Cadeau invisible de bonté</h3>
+        <p>Durant une semaine, chaque élève réalise une bonne action anonyme pour un camarade. À la fin, on tente de deviner qui a agi. Encourage l'action désintéressée.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-book-reader" style="font-size:2rem;"></i>
+      <div>
+        <h3>Lecture partagée</h3>
+        <p>Les élèves plus âgés lisent des histoires aux plus jeunes. Cela crée des liens intergroupes et favorise l'accompagnement entre pairs.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-tools" style="font-size:2rem;"></i>
+      <div>
+        <h3>Atelier de talents solidaires</h3>
+        <p>Chaque élève partage un talent (chanter, peindre, aider avec les devoirs) et le propose au groupe. Cela encourage l'échange désintéressé.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hands-helping" style="font-size:2rem;"></i>
+      <div>
+        <h3>Brigade de soutien scolaire</h3>
+        <p>Des groupes sont formés pour aider les camarades ayant des difficultés académiques ou émotionnelles. Des tuteurs par pairs sont attribués.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-tshirt" style="font-size:2rem;"></i>
+      <div>
+        <h3>Vêtements avec histoire</h3>
+        <p>Les élèves font don de vêtements en bon état et racontent leur histoire. Cela travaille le détachement et l'empathie pour ceux qui les recevront.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-smile" style="font-size:2rem;"></i>
+      <div>
+        <h3>Chasse aux sourires</h3>
+        <p>Durant une journée, les enfants doivent faire sourire le plus de personnes possible avec des gestes, des dessins ou des mots.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-paint-brush" style="font-size:2rem;"></i>
+      <div>
+        <h3>Mural de la solidarité</h3>
+        <p>Un mural collaboratif est conçu à l'école où chaque élève représente un geste solidaire vécu ou souhaité.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-calendar-check" style="font-size:2rem;"></i>
+      <div>
+        <h3>Journée de l'action solidaire</h3>
+        <p>Une journée d'activités solidaires est organisée : nettoyer des espaces publics, écrire des lettres aux hôpitaux, collecter des jouets.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-stethoscope" style="font-size:2rem;"></i>
+      <div>
+        <h3>Kit de secours émotionnel</h3>
+        <p>Une boîte est préparée avec des phrases d'encouragement, des dessins ou des peluches à partager lorsque quelqu'un est triste.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-truck-loading" style="font-size:2rem;"></i>
+      <div>
+        <h3>Campagne alimentaire</h3>
+        <p>Les élèves collectent des aliments non périssables et organisent leur distribution dans un réseau d'entraide local.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-praying-hands" style="font-size:2rem;"></i>
+      <div>
+        <h3>Remerciements solidaires</h3>
+        <p>Chaque élève écrit une note de remerciement à quelqu'un de l'environnement scolaire qui a montré de la solidarité.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-hand-paper" style="font-size:2rem;"></i>
+      <div>
+        <h3>Ta main, ma main</h3>
+        <p>En binômes, les élèves peignent une main de l'autre comme symbole de soutien mutuel et de respect.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-birthday-cake" style="font-size:2rem;"></i>
+      <div>
+        <h3>Anniversaire partagé</h3>
+        <p>Les anniversaires sont célébrés collectivement, sans distinction, avec des contributions communes, éliminant les différences matérielles.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-music" style="font-size:2rem;"></i>
+      <div>
+        <h3>Chanson solidaire</h3>
+        <p>Ils inventent ensemble une chanson sur l'importance d'aider et de partager. Elle peut être enregistrée ou présentée.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-school" style="font-size:2rem;"></i>
+      <div>
+        <h3>Mon école, notre endroit</h3>
+        <p>Ils organisent une action commune pour améliorer l'environnement scolaire (peindre, décorer, nettoyer) comme un geste collectif.</p>
+      </div>
+    </div>
+    
+    <div class="card" style="display:flex; align-items:center; gap:1rem; padding:1rem; border:1px solid #ff33cc; margin-bottom:1rem; border-radius:12px;">
+      <i class="fas fa-comment-alt-smile" style="font-size:2rem;"></i>
+      <div>
+        <h3>Paroles qui étreignent</h3>
+        <p>Des messages anonymes d'encouragement et de soutien sont répartis dans les casiers des camarades et enseignants.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="videos">
+  <div class="card-container">
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Timber – Solidarité en forme de bois</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/mBZBPptSneM" title="Timber" frameborder="0" allowfullscreen></iframe>
+      <p>Plusieurs troncs découvrent que seuls ensemble, ils peuvent allumer le feu et survivre au froid extrême.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> COURT-MÉTRAGE ANIMÉ SUR LA SOLIDARITÉ</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/aF4lMplHxfk" title="Corto solidaridad" frameborder="0" allowfullscreen></iframe>
+      <p>Une animation simple qui montre comment des actes de générosité et d'aide améliorent la vie de tous.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Solidarité entre animaux</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/RNNOYQoFB1I" title="Solidarity of animals" frameborder="0" allowfullscreen></iframe>
+      <p>Plusieurs animaux de différentes espèces s'entraident pour faire face à une menace commune.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Court-métrage sur l'empathie et la solidarité</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/Nhxdwo1Y2Zg" title="Empathie et solidarité" frameborder="0" allowfullscreen></iframe>
+      <p>Histoire qui combine des émotions humaines et animales pour enseigner l'importance de s'entraider.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Journée internationale de la solidarité</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/Re2HDMKL3-o" title="Journée solidarité enfants" frameborder="0" allowfullscreen></iframe>
+      <p>Conte animé pour enfants expliquant la valeur de partager et d'accompagner ceux qui en ont le plus besoin.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Mr Indifferent</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/qLGNj-xrgvY" title="Mr Indifferent" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage montrant la transformation d'un homme indifférent face aux actes de bonté.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> The Soup</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/KP2ky8g-JmE" title="The Soup" frameborder="0" allowfullscreen></iframe>
+      <p>Animation qui relie l'intelligence émotionnelle aux actes de générosité et de solidarité.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Droits de l'Homme 2019</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/pHEid0rqPhE" title="Droits de l'enfance" frameborder="0" allowfullscreen></iframe>
+      <p>Conte animé qui introduit les jeunes aux droits de l'Homme et à leur importance mondiale.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> 70° anniversaire de la Déclaration des Droits de l'Homme</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/YfyxHN0zKms?si=0GYLZwk8dtbqxHQm" title="70 anniversaire DDHH" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage institutionnel commémorant la Journée internationale des droits de l'Homme.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> La parabole de la mante</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/tl-gVZm0hXw?si=HCLTI9B_LltfGRoR" title="La parabole de la mante" frameborder="0" allowfullscreen></iframe>
+      <p>Fable animée enseignant comment concurrencer et gagner avec humanité et respect.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Le chemin de l'école</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/DvMt2bNRaB4?si=6x3uRsQlKTGcrXSz" title="Le chemin de l'école" frameborder="0" allowfullscreen></iframe>
+      <p>Reportage bref sur les grands efforts des enfants qui marchent des kilomètres pour aller à l'école.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Rang-tan</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/TQQXstNh45g?si=6iCJUBqck3J3u7fG" title="Rang-tan histoire du bébé orang-outan" frameborder="0" allowfullscreen></iframe>
+      <p>Animation dénonçant la déforestation et son impact sur les animaux et les communautés.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Atteindre (Reach)</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/lW5JXZwCVw8?si=TL7So_iXXW0VlgEb" title="Reach Atteindre" frameborder="0" allowfullscreen></iframe>
+      <p>Vidéo animée représentant comment de petits actes solidaires se transforment en grands changements.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Loterie de Noël 2015</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/8HsZh4Fkb4A?si=fHyoXEbAxYaL_XQP" title="Loterie Noël 2015" frameborder="0" allowfullscreen></iframe>
+      <p>Annonce émotionnelle qui promeut la générosité et le partage pendant la période de Noël.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ff7043;"></i> Dení et les Droits des Enfants</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/njzg7gBa7s8?si=U0H8enug-WyxsqhH" title="Dení Droits Enfants" frameborder="0" allowfullscreen></iframe>
+      <p>Format éducatif avec des marionnettes qui enseignent les droits de l'enfance de manière ludique.</p>
+    </div>
+  </div>
+</section>
+<section id="tic">
+  <div class="card-container">
+
+    <!-- Recurso 1: Proyecto TIC Solidario – Universidad del Salvador (Argentina) -->
+    <div class="card">
+      <h3><i class="fas fa-laptop"></i> Projet TIC Solidaire – Université du Salvador</h3>
+      <p>Ce projet vise à fournir un accès à du contenu numérique éducatif et récréatif pour les enfants en situation de vulnérabilité, en utilisant les TIC comme outil d'inclusion sociale.</p>
+      <a href="https://responsabilidadsocialuniversitaria.usal.edu.ar/es/proyecto-tic-solidario" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <!-- Recurso 2: Fundación Cibervoluntarios -->
+    <div class="card">
+      <h3><i class="fas fa-users"></i> Fundación Cibervoluntarios</h3>
+      <p>La Fundación Cibervoluntarios est une ONG espagnole qui promeut l'inclusion numérique grâce au bénévolat technologique, offrant une formation gratuite en compétences numériques aux personnes en situation de vulnérabilité.</p>
+      <a href="https://es.wikipedia.org/wiki/Fundaci%C3%B3n_Cibervoluntarios" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <!-- Recurso 3: Juegos para fomentar la empatía y la solidaridad en los peques – Escuela Jauja -->
+    <div class="card">
+      <h3><i class="fas fa-gamepad"></i> Jeux pour encourager l'empathie et la solidarité chez les petits</h3>
+      <p>Escuela Jauja propose des jeux interactifs conçus pour enseigner aux enfants à reconnaître et pratiquer la solidarité dans diverses situations de la vie quotidienne.</p>
+      <a href="https://escuelajauja.com/juegos-fomentar-empatia-y-solidaridad-en-pequenos/" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <!-- Recurso 4: 7 recursos del Día de la Solidaridad para niños y niñas – Twinkl -->
+    <div class="card">
+      <h3><i class="fas fa-heart"></i> 7 ressources pour la Journée de la Solidarité pour les enfants</h3>
+      <p>Twinkl propose une série de ressources éducatives, telles que des présentations, des activités artistiques et des feuilles à colorier, pour enseigner aux enfants l'importance de la solidarité.</p>
+      <a href="https://www.twinkl.es/blog/7-recursos-del-dia-de-la-solidaridad-para-ninos" target="_blank">Accéder à la ressource</a>
+    </div>
+
+    <!-- Recurso 5: Recursos que fomentan la solidaridad en el alumnado – Educación 3.0 -->
+    <div class="card">
+      <h3><i class="fas fa-school"></i> Ressources qui favorisent la solidarité chez les élèves</h3>
+      <p>Éducation 3.0 rassemble des activités à réaliser en classe qui promeuvent la solidarité, telles que des jeux collaboratifs et des projets de service communautaire.</p>
+      <a href="https://www.educaciontrespuntocero.com/recursos/fomentan-solidaridad-alumnos/" target="_blank">Accéder à la ressource</a>
+    </div>
+
+  </div>
+</section>
+<section id="lecturas">
+  <div class="card-container">
+
+    <div class="card">
+      <img src="img/a_que_sabe_la_luna.jpg" alt="¿A qué sabe la luna?" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>À quoi ressemble la lune ?</h3>
+      <p><strong>Auteur :</strong> Michael Grejniec<br>
+         <strong>Âge :</strong> 9-12 ans<br>
+         <strong>ISBN :</strong> 9788484648238</p>
+      <p>Différents animaux collaborent pour découvrir le goût de la lune. Une belle métaphore sur l'unité, la collaboration et la solidarité.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/filipinas_tres_historias.jpg" alt="Filipinas: tres historias de despertar" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Philippines : trois histoires de réveil</h3>
+      <p><strong>Auteur :</strong> Taller de Solidaridad (ONG)<br>
+         <strong>Âge :</strong> 9-12 ans<br>
+         <strong>ISBN :</strong> 9788467591234</p>
+      <p>Des récits sur des femmes aux Philippines qui, grâce à la coopération et au commerce équitable, ont généré des changements dans leurs communautés. Favorise la solidarité mondiale.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/cada_familia_a_su_aire.jpg" alt="Cada familia, a su aire" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Chaque famille à sa manière</h3>
+      <p><strong>Auteur :</strong> Béatrice Boutignos<br>
+         <strong>Âge :</strong> 9-12 ans<br>
+         <strong>ISBN :</strong> 9788494830120</p>
+      <p>Il montre la diversité des familles avec humour et normalité. Il promeut l'acceptation, la solidarité familiale et le respect des différences.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/una_pequena_casa.jpg" alt="Una pequeña casa en el bosque" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Une petite maison dans la forêt</h3>
+      <p><strong>Auteur :</strong> Jutta Bauer<br>
+         <strong>Âge :</strong> 9-12 ans<br>
+         <strong>ISBN :</strong> 9786071112345</p>
+      <p>Un cerf offre un refuge dans sa maison à tous les animaux de la forêt, y compris ceux qui sont ses « menaces ». Réflexion sur l'empathie et la solidarité communautaire.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/soy_un_punto.jpg" alt="Soy un punto" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Je suis un point</h3>
+      <p><strong>Auteur :</strong> Giancarlo Macrì<br>
+         <strong>Âge :</strong> 9-12 ans<br>
+         <strong>ISBN :</strong> 9786073134567</p>
+      <p>Partant de leur différence, les points (divers) coopèrent pour créer quelque chose de beau ensemble. Une excellente métaphore sur la coopération et la solidarité.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/el_pez_arcoiris.jpg" alt="El pez arcoíris" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Le poisson arc-en-ciel</h3>
+      <p><strong>Auteur :</strong> Marcus Pfister<br>
+         <strong>Âge :</strong> 9-12 ans<br>
+         <strong>ISBN :</strong> 9788434891908</p>
+      <p>Un poisson apprend que partager ses écailles le rend partie du groupe. Enseigne la générosité, l'empathie et la solidité du lien solidaire.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+    EscolaDiversa - Competencia Clave: Solidaridad
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Interculturalité</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+      box-shadow: 0 0 10px 10px #ff33cc66, 0 0 120px 60px #ff33cc33 inset;
+
+      margin-bottom: 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #ff33cc;
+      text-shadow: 0 0 10px #ff33cc88;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+    .inicio-btn {
+      background: #ff33cc;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    nav button {
+      background: #111;
+      color: #ff33cc;
+      border: 2px solid #ff33cc;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    nav button:hover {
+      background: #ff33cc;
+      color: #000;
+    }
+    section {
+      display: none;
+    }
+    section.active {
+      display: block;
+    }
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #ff33cc44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #ff33cc22;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: #ff33cc;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+    .card a {
+      color: #ff33cc;
+      text-decoration: underline;
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Interculturalité</h1>
+<p>Favoriser la compréhension et la valorisation de la diversité culturelle</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-users"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+
+<section id="dinamicas"><div class="card-container">
+
+<div class="card">
+  <h3><i class="fas fa-globe"></i> Carte des origines</h3>
+  <p>Chaque élève marque sur une carte du monde le pays ou la région d'origine de sa famille. Ensuite, ils partagent des coutumes, des langues ou des plats typiques. Cela permet de rendre visible la diversité du groupe et de la valoriser comme une richesse culturelle.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-utensils"></i> Saveurs du monde</h3>
+  <p>Les élèves apportent des recettes ou des plats représentatifs de leur culture familiale. Une foire gastronomique est organisée avec des explications sur l'origine de chaque plat. Cela stimule la curiosité, le respect et le dialogue interculturel au quotidien.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-music"></i> Sons de la planète</h3>
+  <p>On écoute des musiques typiques de différents pays et les élèves doivent deviner leur origine. Ensuite, on enquête sur les instruments, les paroles ou les danses. Cela renforce l'appréciation des expressions culturelles diverses.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-flag"></i> Défilé de drapeaux</h3>
+  <p>Chaque élève choisit un drapeau représentant sa culture ou celle de ses ancêtres. Ils préparent une brève présentation. La salle de classe est décorée avec ces drapeaux. Cela renforce l'identité et le respect des racines des autres.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-book"></i> Contes du monde</h3>
+  <p>Lecture de contes traditionnels de différentes régions du monde, suivie d'une comparaison des enseignements. Ensuite, on les met en scène. Cette activité favorise la compréhension des valeurs universelles à travers différentes cultures.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-palette"></i> Art sans frontières</h3>
+  <p>Atelier artistique utilisant des techniques décoratives de différentes cultures (mandalas, masques africains, calligraphie arabe). Exposition dans une galerie interculturelle. Cela développe la créativité et la valorisation de l’autre.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-comments"></i> Histoires partagées</h3>
+  <p>Les élèves interrogent leur famille sur leurs récits migratoires ou anecdotes culturelles. Ils partagent ensuite ce qu’ils ont appris. Cela renforce le lien intergénérationnel et la compréhension de l’autre.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-handshake"></i> Saluer comme dans...</h3>
+  <p>On apprend différentes façons de saluer selon les cultures (bise, révérence, mots spécifiques). Puis on les utilise dans une activité de groupe. Cela enseigne le respect des codes culturels variés.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-theater-masks"></i> Théâtre interculturel</h3>
+  <p>Mise en scène de situations de malentendus culturels. Une discussion suit pour réfléchir à la manière de les éviter. Cela développe l’empathie et prévient la discrimination.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-language"></i> Mots amis</h3>
+  <p>Les élèves enseignent un mot ou une expression dans leur langue maternelle. Des affiches sont créées avec ces mots. Cela rend visible la richesse linguistique de la classe.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-bullhorn"></i> Campagne antiracisme</h3>
+  <p>Les élèves conçoivent des affiches ou des slogans contre la discrimination culturelle ou raciale. Ils sont exposés dans les couloirs. Cela favorise l’engagement pour l’inclusion.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-video"></i> Cinéma sans frontières</h3>
+  <p>Projection de courts-métrages ou de films sur la cohabitation interculturelle. Suivie d’un débat. Encourage l’analyse critique et le dialogue respectueux.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-child"></i> Jeux du monde</h3>
+  <p>Chaque semaine, on apprend un jeu typique d’un pays (échecs chinois, marelle chilienne, mancala africain). Favorise le plaisir partagé et le respect par le jeu.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-school"></i> Ambassadeurs culturels</h3>
+  <p>Des groupes d’élèves représentent une culture et la présentent à la classe avec des activités interactives. Cela renforce le respect mutuel et l’estime de soi culturelle.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-photo-video"></i> Album de visages</h3>
+  <p>Avec des photos apportées par les familles, un mur est construit pour refléter la diversité du groupe. Chaque image est accompagnée d’une histoire. Cela favorise la fierté identitaire.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-heart"></i> Ce qui nous unit</h3>
+  <p>Sur une fresque commune, les enfants écrivent les valeurs qu’ils partagent malgré leurs différences : amour, amitié, respect. Cela met en évidence l’unité dans la diversité.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-map-marked-alt"></i> Voyage imaginaire</h3>
+  <p>En groupes, ils créent une agence de voyages qui présente des destinations culturelles. Ils doivent montrer les coutumes, les langues et la gastronomie. Cela stimule la curiosité et la coopération.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-hands-helping"></i> Histoires d'accueil</h3>
+  <p>Partage de récits réels ou fictifs d’enfants migrants. Discussion sur les émotions liées à ces situations. Favorise l’empathie et l’hospitalité.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-clipboard-check"></i> Engagements interculturels</h3>
+  <p>Chaque enfant propose un petit geste quotidien pour favoriser l’inclusion (inviter à jouer, traduire, respecter la nourriture de l’autre...). Un suivi est fait. Encourage des actions concrètes.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-lightbulb"></i> Réflexions sans préjugés</h3>
+  <p>Des phrases provocantes sont proposées (ex : “tous les Africains dansent bien”) pour débattre et déconstruire les stéréotypes. Cela éduque à la pensée critique et au respect véritable.</p>
+</div>
+
+</div></section>
+<section id="videos"><div class="card-container">
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Interculturalité : notions de base</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/VuZs6JkLKDM"></iframe>
+  <p>Introduction claire aux concepts de diversité culturelle, de dialogue et de coexistence respectueuse.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Interculturalité critique (SEP)</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/yXLh_A4TuUc"></iframe>
+  <p>Proposition pédagogique du SEP pour promouvoir une interculturalité réflexive en classe.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Tolerantia</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/FrjQrXc80cY"></iframe>
+  <p>Animation européenne sur l'intolérance et le respect entre les cultures.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Binta et la grande idée</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/zqNzfRaKw9g"></iframe>
+  <p>Court métrage nommé aux Oscars sur l'égalité, l'éducation et l'autonomisation des femmes en Afrique.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Le chef et le charpentier</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/ItoEwcGi8Ig"></iframe>
+  <p>Fable animée sur l'écoute, le bon sens et le dialogue interculturel.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Willakuy !</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/-X6iOwIjHdw"></iframe>
+  <p>Affronte les chocs culturels et identitaires modernes. Idéal pour travailler l'estime de soi culturelle.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Apprends avec Dani. Afrique</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/vJyEWUAO7JM?si=N_zDgszeo2UQ_RKJ"></iframe>
+  <p>Découvre la vie, les valeurs et la culture des enfants africains.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Repartir de zéro</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/D95DqgyaMz4?si=ywuTLVf4sIjGkMy-"></iframe>
+  <p>Court métrage d'animation sur Samara, une jeune gitane, surmontant les obstacles pour atteindre la Ville Zéro.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Baraka</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/QeKjPDp6vtA?si=ynndSunmxmsVp_vM"></iframe>
+  <p>Documentaire sans paroles sur la diversité culturelle dans 24 pays. Un message d'unité humaine.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> La vraie Leonor et d'autres enfants réels</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/_RxMwVmABF8?si=lK6GiYe09ZSe6lY3"></iframe>
+  <p>Comparaison de la vie d'une fille européenne et d'autres enfants du monde. Réflexion sur les privilèges.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Le voyage de Said</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/Vj_uTysl3kI?si=utesWSjnarCwcRub"></iframe>
+  <p>Animation sensible sur la migration infantile et le rêve d'une vie meilleure.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> MIGRANT</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/7qJDu-rMxl4"></iframe>
+  <p>Court animé basé sur des témoignages réels de migrants en Amérique latine.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> REFUGE</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/QN3gWugzLkk"></iframe>
+  <p>Animation sur l'expérience des réfugiés avec une perspective humaine et solidaire.</p>
+</div>
+
+<div class="card">
+  <h3><i class="fas fa-film" style="color:#42a5f5;"></i> Petites voix</h3>
+  <iframe width="100%" height="215" src="https://www.youtube.com/embed/ovWGE4sgPe4"></iframe>
+  <p>Documentaire animé inspiré des dessins et témoignages d'enfants déplacés en Colombie.</p>
+</div>
+
+</div></section>
+<section id="tic"><div class="card-container">
+  <div class="card">
+    <h3><i class="fas fa-globe"></i> Google Earth : Voyage autour du monde</h3>
+    <p>Explore le monde et découvre différentes cultures à travers des images, de l'histoire et des données intéressantes avec Google Earth.</p>
+    <a href="https://earth.google.com/web/" target="_blank">Acceder al recurso</a>
+  </div>
+  <div class="card">
+    <h3><i class="fas fa-users"></i> Compétence globale : Idées pour les enseignants</h3>
+    <p>Ressource éducative de l'UNESCO pour développer les compétences globales et interculturelles en classe.</p>
+    <a href="https://www.unesco.org/en/global-competence" target="_blank">Acceder al recurso</a>
+  </div>
+  <div class="card">
+    <h3><i class="fas fa-language"></i> Duolingo</h3>
+    <p>Application pour apprendre les langues de manière ludique et dynamique, favorisant la compréhension d'autres langues et cultures.</p>
+    <a href="https://www.duolingo.com/" target="_blank">Acceder al recurso</a>
+  </div>
+</div></section>
+<section id="lectures"><div class="card-container">
+
+<div class="card">
+  <img src="img/danbi.jpg" alt="Danbi Leads the School Parade" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Danbi mène le défilé de l'école</h3>
+  <p><strong>Auteur :</strong> Anna Kim<br>
+  <strong>Âge :</strong> 9-12 ans<br>
+  <strong>ISBN :</strong> 9780451478894</p>
+  <p>Danbi arrive de Corée dans sa nouvelle école aux États-Unis et partage sa culture tout en trouvant des moyens de se connecter avec les autres. Idéal pour parler d'intégration et de respect.</p>
+</div>
+
+<div class="card">
+  <img src="img/papa_racismo.jpg" alt="Papa, c’est quoi le racisme ?" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Papa, c’est quoi le racisme ?</h3>
+  <p><strong>Auteur :</strong> Tahar Ben Jelloun<br>
+  <strong>Âge :</strong> 10-12 ans<br>
+  <strong>ISBN :</strong> 9788426390653</p>
+  <p>Une conversation entre un père et sa fille pour introduire le thème du racisme de façon claire, proche et compréhensible. Parfait pour lancer un débat en classe.</p>
+</div>
+
+<div class="card">
+  <img src="img/uñascolores.jpg" alt="Vive les ongles colorés !" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Vive les ongles colorés !</h3>
+  <p><strong>Auteur :</strong> Alicia Acosta et Luis Amavisca<br>
+  <strong>Âge :</strong> 9-12 ans<br>
+  <strong>ISBN :</strong> 9788416434163</p>
+  <p>Juan veut se peindre les ongles et est critiqué pour cela, mais son père le soutient. Une histoire sur la diversité, l’expression personnelle et le respect des différences.</p>
+</div>
+
+<div class="card">
+  <img src="img/eduprincesa.jpg" alt="Édouard en robe de princesse" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Édouard en robe de princesse</h3>
+  <p><strong>Auteur :</strong> Díaz Berride<br>
+  <strong>Âge :</strong> 9-12 ans<br>
+  <strong>ISBN :</strong> 9788417028224</p>
+  <p>Édouard brise les stéréotypes en choisissant de porter des robes. Une histoire qui provoque le rejet mais aussi la réflexion. Pour travailler la diversité de genre et le respect culturel.</p>
+</div>
+
+<div class="card">
+  <img src="img/huguis.jpg" alt="Les Huguis et le nouveau pull" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Les Huguis et le nouveau pull</h3>
+  <p><strong>Auteur :</strong> Oliver Jeffers<br>
+  <strong>Âge :</strong> 9-12 ans<br>
+  <strong>ISBN :</strong> 9788467861642</p>
+  <p>Une histoire simple sur l’acceptation et l’exclusion : un nouveau personnage arrive dans le groupe et est rejeté. Excellente pour aborder l’inclusion avec empathie.</p>
+</div>
+
+<div class="card">
+  <img src="img/cuentosafricanos.jpg" alt="Contes africains" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+  <h3>Contes africains</h3>
+  <p><strong>Auteur :</strong> Auteurs divers<br>
+  <strong>Âge :</strong> 9-12 ans<br>
+  <strong>ISBN :</strong> 9788420431864</p>
+  <p>Recueil de contes populaires africains pour découvrir d'autres cultures, visions du monde et valeurs traditionnelles. Idéal pour enrichir la diversité en lecture.</p>
+</div>
+
+</div></section>
+
+
+
+<footer>
+    EscolaDiversa - Competencia Clave: Interculturalidad
+  </footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>

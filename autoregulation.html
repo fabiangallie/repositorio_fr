@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Autorégulation</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      padding: 20px;
+    }
+
+    header {
+      background: #111;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 12px;
+       box-shadow: 0 0 10px 10px #00ffff66, 0 0 120px 60px #00ffff33 inset;
+      margin-bottom: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff88;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .inicio-btn {
+      background: #00ffff;
+      color: #000;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    nav button {
+      background: #111;
+      color: #00ffff;
+      border: 2px solid #00ffff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    nav button:hover {
+      background: #00ffff;
+      color: #000;
+    }
+
+    section {
+      display: none;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    .card-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #111;
+      border: 1px solid #00ffff44;
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 0 10px #00ffff22;
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      color: #00ffff;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #ccc;
+      font-size: 0.95rem;
+    }
+
+    .card a {
+      color: #00ffff;
+      text-decoration: underline;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    iframe {
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+<header>
+<h1>Autorégulation</h1>
+<p>Comprendre mes pensées, mes émotions et mes forces</p>
+<button class="inicio-btn" onclick="window.location.href='index_competencias.html'"><i class="fas fa-home"></i>Accueil</button>
+</header>
+<nav>
+<button onclick="mostrar('publicaciones')"><i class="fas fa-book-open"></i>Publications</button>
+<button onclick="mostrar('dinamicas')"><i class="fas fa-people-arrows"></i>Dynamiques</button>
+<button onclick="mostrar('videos')"><i class="fas fa-video"></i>Vidéos</button>
+<button onclick="mostrar('tic')"><i class="fas fa-laptop-code"></i>TIC</button>
+<button onclick="mostrar('lecturas')"><i class="fas fa-book-reader"></i>Lectures</button>
+</nav>
+<section id="dinamicas">
+  <div class="card-container">
+    <div class="card">
+      <h3>🧘 Respiration profonde</h3>
+      <p>On propose de guider les élèves dans des respirations lentes et conscientes. Ils peuvent se mettre en cercle, fermer les yeux et accompagner la respiration avec une musique douce ou compter jusqu'à 4 à l'inspiration, la rétention et l'expiration. À la fin, ils partagent ce qu'ils ressentent. Idéal en début ou en fin de journée scolaire.</p>
+    </div>
+    <div class="card">
+      <h3>🌋 Le volcan</h3>
+      <p>Les élèves utilisent leur corps pour représenter l'accumulation de tension émotionnelle, comme des volcans prêts à exploser. Ensuite, ils identifient les signaux physiques de la colère et découvrent des moyens de libérer cette énergie sans blesser, comme serrer une balle ou écrire ce qui les dérange.</p>
+    </div>
+    <div class="card">
+      <h3>🎨 La roue des émotions</h3>
+      <p>Les élèves dessinent une roue divisée en sections, chacune représentant une émotion. Pour chaque section, ils décrivent comment cette émotion se manifeste dans le corps et ce qu'ils peuvent faire pour la réguler. Ensuite, ils partagent leurs stratégies préférées avec le groupe.</p>
+    </div>
+    <div class="card">
+      <h3>🚦 Feu tricolore émotionnel</h3>
+      <p>Les élèves apprennent à identifier trois états : Rouge (arrêter), Jaune (réfléchir) et Vert (agir). On leur donne des cartes ou ils dessinent un feu tricolore et pratiquent des réactions pour chaque couleur. Utile pour travailler l'impulsivité au quotidien.</p>
+    </div>
+    <div class="card">
+      <h3>🛑 Pause volontaire</h3>
+      <p>Un espace de calme est aménagé dans la classe, accessible aux élèves qui souhaitent se détendre. Ils peuvent y lire, dessiner ou respirer. Cela encourage la prise d'initiative et l'autosoins.</p>
+    </div>
+    <div class="card">
+      <h3>🧴 Bouteille de calme</h3>
+      <p>Une bouteille est remplie d'eau, de colle et de paillettes. Lorsqu'on l'agite, les élèves observent les paillettes retomber, symbolisant l'apaisement de leurs pensées. Idéal pour enseigner la patience.</p>
+    </div>
+    <div class="card">
+      <h3>🔟 Compter jusqu'à 10</h3>
+      <p>En groupe, on simule des situations de tension ou de colère et on pratique la technique de compter mentalement jusqu’à 10 avant de réagir. Ensuite, on évalue comment cela change la réponse émotionnelle.</p>
+    </div>
+    <div class="card">
+      <h3>🎲 Le dé du calme</h3>
+      <p>On fabrique un dé avec des actions apaisantes sur chaque face (respirer, s'étirer, imaginer, écrire, écouter de la musique, parler). En cas d'émotion forte, l'élève le lance et réalise l'action indiquée.</p>
+    </div>
+    <div class="card">
+      <h3>⏳ Le sablier</h3>
+      <p>Un petit sablier est utilisé pour inviter à réfléchir avant d’agir. Chaque fois qu’un élève se sent bouleversé, il peut le retourner et, pendant ce temps, penser à une réponse calme.</p>
+    </div>
+    <div class="card">
+      <h3>🗣️ Mot refuge</h3>
+      <p>Chaque enfant choisit un mot pour signaler qu’il a besoin d’une pause pour se calmer. Le groupe respecte ce mot comme un signe d’autoprotection. Cela développe le respect mutuel et la reconnaissance des limites personnelles.</p>
+    </div>
+    <div class="card">
+      <h3>📏 Échelle des émotions</h3>
+      <p>Une échelle visuelle avec des couleurs ou des chiffres est créée pour représenter les niveaux d’intensité émotionnelle. Les élèves s’entraînent à se situer sur l’échelle à différents moments de la journée et apprennent à adapter leurs actions.</p>
+    </div>
+    <div class="card">
+      <h3>📦 Ma boîte de calme</h3>
+      <p>Chaque élève crée une boîte avec des objets qui l’apaisent (peluches, textures, odeurs, images, phrases). Elle peut être utilisée en cas d’anxiété ou de colère. Ensuite, ils partagent leur contenu avec leurs camarades.</p>
+    </div>
+    <div class="card">
+      <h3>🧘 Yoga des émotions</h3>
+      <p>Des émotions sont associées à des postures de yoga : par exemple, la colère avec une posture forte, la tristesse avec une posture repliée. Une séquence corporelle est proposée pour reconnaître et transformer les émotions.</p>
+    </div>
+    <div class="card">
+      <h3>📔 Mon journal émotionnel</h3>
+      <p>Chaque jour, les élèves écrivent brièvement ce qu’ils ont ressenti, ce qui les a contrariés ou ce qui les a rendus heureux. Ensuite, ils peuvent relire leurs notes pour identifier des motifs ou des changements émotionnels.</p>
+    </div>
+    <div class="card">
+      <h3>🎈 Le ballon qui s’envole</h3>
+      <p>Chaque élève reçoit un ballon dans lequel il écrit une émotion intense ou une pensée négative. En le gonflant puis en le relâchant, il le voit s’éloigner, symbolisant la libération de ce qui l’oppresse.</p>
+    </div>
+    <div class="card">
+      <h3>🪨 La pierre du contrôle de soi</h3>
+      <p>On remet à chaque élève une petite pierre lisse, symbole du contrôle de soi. Il la garde dans sa poche et la serre pour se rappeler qu’il peut choisir sa réaction. Accompagnée d’une réflexion sur les décisions personnelles.</p>
+    </div>
+    <div class="card">
+      <h3>🔁 Relais émotionnel</h3>
+      <p>Une course de relais est organisée : à chaque passage de témoin, l’élève nomme une émotion et une stratégie positive pour la gérer. L’équipe qui partage le plus d’idées de régulation gagne.</p>
+    </div>
+    <div class="card">
+      <h3>🖍️ Colorie ton calme</h3>
+      <p>Des mandalas ou dessins répétitifs sont distribués pour être coloriés en silence, avec une musique apaisante. Un exercice de pleine conscience pour détendre le corps et l’esprit.</p>
+    </div>
+    <div class="card">
+      <h3>👾 Les monstres du contrôle de soi</h3>
+      <p>Des "monstres" représentant différentes émotions difficiles sont dessinés (colère, peur, tristesse). Ensuite, on cherche des moyens de les apaiser et on crée une affiche avec des stratégies efficaces.</p>
+    </div>
+    <div class="card">
+      <h3>🎛️ Mes boutons émotionnels</h3>
+      <p>Chaque élève identifie ce qui déclenche ses émotions intenses. Il dessine ses "boutons" et écrit à côté comment réagir sans perdre le contrôle.</p>
+    </div>
+  </div>
+</section>
+<section id="videos">
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#4db6ac;"></i> Le pouvoir de l'autocontrôle</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/QpyyEhK1f0A?si=mtffLv24hXf2pvJW" title="Expérience du marshmallow" frameborder="0" allowfullscreen></iframe>
+      <p>Cette expérience classique montre comment de jeunes enfants font face au défi de résister à une friandise pour obtenir une meilleure récompense. Une excellente façon d'aborder l'importance de l'autocontrôle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#f4c542;"></i> Gestion des émotions</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/0pvUY3pBenA?si=jo1XrLzEPMw0JxaF" title="Gestion des émotions" frameborder="0" allowfullscreen></iframe>
+      <p>Vidéo éducative pour enfants sur l’autorégulation émotionnelle : pourquoi elle est importante et comment bien la gérer.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ba68c8;"></i> Calme dans la tempête</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/YFSc7Ck0Ao0" title="Calme dans la tempête" frameborder="0" allowfullscreen></iframe>
+      <p>Relaxation guidée qui enseigne aux enfants à apaiser leur esprit et leur corps. Idéal pour pratiquer la pleine conscience en classe.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#81c784;"></i> Respire simplement</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/i9pM5-gytdg?si=XKV6UEwQg9A8b62H" title="Respire simplement" frameborder="0" allowfullscreen></iframe>
+      <p>Court-métrage sur la colère, son origine et des outils pour la gérer à travers la respiration consciente.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ce93d8;"></i> Petit Icare</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/8O9pFf6a1-A?si=hliIYFhXuJ64YWX6" title="Petit Icare" frameborder="0" allowfullscreen></iframe>
+      <p>Un garçon essaie sans succès de faire voler ses avions, ce qui le frustre. Une histoire pour réfléchir à la patience et à l'autocontrôle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#81c784;"></i> Une leçon dans les nuages</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/Zg5ktnl4EBY?si=QF1VRDDqj9WF6xMp" title="Une leçon dans les nuages" frameborder="0" allowfullscreen></iframe>
+      <p>Une histoire sur l'impulsivité et les erreurs courantes. Le protagoniste apprend avec son grand-père la valeur de la patience.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ce93d8;"></i> Résister à la tentation des bonbons</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/G0Ak5hUC-JI?si=xN3Xdske4fu0ZKE8" title="Résister à la tentation des bonbons" frameborder="0" allowfullscreen></iframe>
+      <p>Des enfants face à une machine à bonbons : une opportunité de travailler la patience, la gratification différée et l’autocontrôle.</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-film" style="color:#ce93d8;"></i> Le cours de la nature</h3>
+      <iframe width="100%" height="215" src="https://www.youtube.com/embed/R5ZilEpX4Hc?si=-8bKytr0j33OMV0x" title="Le cours de la nature" frameborder="0" allowfullscreen></iframe>
+      <p>Un autre exemple de la relation parent-enfant et des multiples facettes de l'éducation et de l'amour filial. La petite fille de Mère Nature montre de la rébellion et de la désobéissance, ignorant les conséquences possibles de ses actes.</p>
+    </div>
+
+  </div>
+</section>
+<section id="tic">
+  <div class="card-container">
+
+    <div class="card">
+      <h3><i class="fas fa-water" style="color:#4db6ac;"></i> La mer – Relaxation</h3>
+      <p>Cette ressource propose des contes courts à écouter les yeux fermés, favorisant la visualisation mentale et la détente. Elle aide à travailler la respiration et la concentration.</p>
+      <a href="https://educaixa.org/microsites/KitsCaixa_valores/visualizacion_1/Contenidos/recursos_aux/index.html" target="_blank">Voir la ressource</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-brain" style="color:#ffb74d;"></i> Nexxo</h3>
+      <p>Application pour entraîner l'attention et l'autocontrôle chez les enfants avec ou sans TDAH. Elle améliore les processus de régulation du comportement à travers des activités ludiques.</p>
+      <a href="https://apps.apple.com/es/app/nexxo/id979045960" target="_blank">Voir l'application</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-child" style="color:#7986cb;"></i> Mindful Powers</h3>
+      <p>Application avec des contes interactifs pour guider les enfants dans la pratique de la pleine conscience et de l'autocontrôle. Disponible en espagnol.</p>
+      <a href="https://www.understood.org/es-mx/school-learning/assistive-technology/finding-an-assistive-technology/8-meditation-apps-for-kids#slide-1" target="_blank">Voir l'application</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-leaf" style="color:#ba68c8;"></i> Petit BamBou</h3>
+      <p>Comprend plus de 200 méditations guidées pour enfants. Idéal pour débuter dans la pleine conscience. Disponible en espagnol pour Android et iOS.</p>
+      <a href="https://www.petitbambou.com/es" target="_blank">Voir l'application</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-peace" style="color:#9575cd;"></i> Méditation KIDS – Vers le calme</h3>
+      <p>Six méditations et contes interactifs pour apprendre aux enfants à apaiser leur esprit et réguler leurs émotions. Disponible en espagnol sur mobile.</p>
+      <a href="https://hacialacalma.com" target="_blank">Voir l'application</a>
+    </div>
+
+    <div class="card">
+      <h3><i class="fas fa-mountain" style="color:#4db6ac;"></i> Headspace</h3>
+      <p>Application de méditation célèbre, également disponible pour les enfants. Inclut des exercices de respiration et de relaxation avec des personnages et sons agréables. Disponible en espagnol.</p>
+      <a href="https://www.headspace.com/es" target="_blank">Voir l'application</a>
+    </div>
+
+  </div>
+</section>
+<section id="lecturas">
+  <div class="card-container">
+
+    <div class="card">
+      <img src="img/coraje.jpg" alt="Courage" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Courage</h3>
+      <p><strong>Auteure :</strong> Raina Telgemeier<br>
+      <strong>ISBN :</strong> 9788417708931</p>
+      <p>Roman graphique qui traite de l'importance d'affronter ses peurs avec courage. Une histoire tendre et amusante, idéale pour aborder la gestion des émotions à l'adolescence.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/conociendomisemociones.jpg" alt="Mieux connaître mes émotions" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Mieux connaître mes émotions</h3>
+      <p><strong>Auteur :</strong> Francisco Villar<br>
+      <strong>ISBN :</strong> 978-84-10050-33-4</p>
+      <p>Apprends à écouter et à valider tes émotions. Peur, colère, tristesse, joie… Combien d’émotions existe-t-il ? L’amour est-il une émotion ? Y a-t-il des émotions positives et négatives ? À quoi servent-elles ? Faut-il se laisser guider par les émotions ? Quelle est la relation entre ce que je ressens et ce que je pense ?</p>
+    </div>
+
+    <div class="card">
+      <img src="img/losmonstruos.jpg" alt="Les monstres pleurent aussi" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Les monstres pleurent aussi</h3>
+      <p><strong>Auteur :</strong> Guillaume Duprat<br>
+      <strong>ISBN :</strong> 978-84-17374-39-6</p>
+      <p>Colère, amour, déception, vengeance, peur… Saviez-vous que même les créatures les plus monstrueuses peuvent ressentir des émotions ? Plongez dans la tête des monstres et découvrez, en soulevant les volets, ce qui fait trembler le Yéti ou le cœur tendre de King Kong. Douze histoires racontées… par les monstres eux-mêmes !</p>
+    </div>
+
+    <div class="card">
+      <img src="img/cuentame.jpg" alt="Raconte-moi quand je suis né" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Raconte-moi quand je suis né</h3>
+      <p><strong>Auteure :</strong> Cristina Cortés<br>
+      <strong>ISBN :</strong> 978-84-330-3096-2</p>
+      <p>À travers un langage métaphorique et des illustrations marines, ce livre nous plonge dans le bleu profond des émotions, en particulier dans ces lieux intérieurs où sont enfouies des émotions et besoins fondamentaux non satisfaits : affection, calme, réconfort, sécurité.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/elviaje.jpg" alt="Le voyage des émotions" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Le voyage des émotions</h3>
+      <p><strong>Auteur :</strong> Lluís Guzmán<br>
+      <strong>ISBN :</strong> 978-84-127588-9-4</p>
+      <p>Le voyage des émotions raconte les aventures d’un groupe d’amis : Alex, Tate, Najat, Gemma et Alberto. Ensemble, ils traverseront des paysages magiques, chacun révélant une émotion unique, une couleur qui les guidera vers une meilleure compréhension et gestion de leurs sentiments.</p>
+    </div>
+
+    <div class="card">
+      <img src="img/diariodeemociones.jpg" alt="Mon journal des émotions" style="width:100%; height:250px; object-fit:cover; border-radius:10px;">
+      <h3>Mon journal des émotions</h3>
+      <p><strong>Auteur·e·s :</strong> Divers auteurs<br>
+      <strong>ISBN :</strong> 9788418592232</p>
+      <p>Un carnet interactif pour aider les enfants à identifier, nommer et gérer leurs émotions de manière créative. Il favorise l'autocontrôle à travers l'écriture et le dessin.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<footer>EscolaDiversa - Compétence clé : Estime de soi</footer>
+<script>
+    function mostrar(id) {
+      document.querySelectorAll('section').forEach(sec => sec.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
+</body>
+</html>
